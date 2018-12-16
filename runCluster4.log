@@ -1,0 +1,2240 @@
+#Instances requested: 40
+#Partitions unfinished: 999
+#Partitions to process: 999
+#Partitions equally assigned to 40 instances
+---------------------------
+Tag: POSTPROCESSING2
+force update: false
+MAX_NUM_EVENT: 100
+All have ips assigned.
+34.205.166.202 (pending) isn't running.
+18.204.247.183 (pending) isn't running.
+34.200.216.197 (pending) isn't running.
+35.170.53.254 (pending) isn't running.
+34.200.234.160 (pending) isn't running.
+35.170.80.0 (pending) isn't running.
+34.201.30.208 (pending) isn't running.
+18.215.33.18 (pending) isn't running.
+52.54.70.190 (pending) isn't running.
+100.26.5.5 (pending) isn't running.
+18.234.139.84 (pending) isn't running.
+18.208.203.123 (pending) isn't running.
+100.24.119.18 (pending) isn't running.
+18.214.36.173 (pending) isn't running.
+18.207.138.219 (pending) isn't running.
+18.209.228.30 (pending) isn't running.
+34.231.225.13 (pending) isn't running.
+35.175.108.219 (pending) isn't running.
+18.204.214.136 (pending) isn't running.
+34.205.225.236 (pending) isn't running.
+54.160.43.40 (pending) isn't running.
+18.210.7.186 (pending) isn't running.
+54.83.248.94 (pending) isn't running.
+3.80.12.96 (pending) isn't running.
+34.237.223.60 (pending) isn't running.
+18.204.35.105 (pending) isn't running.
+34.232.95.90 (pending) isn't running.
+18.207.102.147 (pending) isn't running.
+100.25.246.181 (pending) isn't running.
+18.206.86.66 (pending) isn't running.
+34.200.238.240 (pending) isn't running.
+54.157.114.224 (pending) isn't running.
+18.233.111.220 (pending) isn't running.
+18.207.100.137 (pending) isn't running.
+34.232.210.29 (pending) isn't running.
+100.25.98.107 (pending) isn't running.
+34.201.6.44 (pending) isn't running.
+34.200.248.185 (pending) isn't running.
+34.234.211.27 (pending) isn't running.
+34.206.52.113 (pending) isn't running.
+All aren't running. Wait for 10 sec...
+34.205.166.202 (pending) isn't running.
+18.204.247.183 (pending) isn't running.
+34.200.216.197 (pending) isn't running.
+35.170.53.254 (pending) isn't running.
+34.200.234.160 is running.
+35.170.80.0 (pending) isn't running.
+34.201.30.208 (pending) isn't running.
+18.215.33.18 (pending) isn't running.
+52.54.70.190 (pending) isn't running.
+100.26.5.5 (pending) isn't running.
+18.234.139.84 (pending) isn't running.
+18.208.203.123 (pending) isn't running.
+100.24.119.18 is running.
+18.214.36.173 (pending) isn't running.
+18.207.138.219 (pending) isn't running.
+18.209.228.30 (pending) isn't running.
+34.231.225.13 (pending) isn't running.
+35.175.108.219 (pending) isn't running.
+18.204.214.136 (pending) isn't running.
+34.205.225.236 (pending) isn't running.
+54.160.43.40 (pending) isn't running.
+18.210.7.186 (pending) isn't running.
+54.83.248.94 (pending) isn't running.
+3.80.12.96 (pending) isn't running.
+34.237.223.60 (pending) isn't running.
+34.232.95.90 (pending) isn't running.
+18.207.102.147 (pending) isn't running.
+100.25.246.181 (pending) isn't running.
+18.206.86.66 (pending) isn't running.
+34.200.238.240 (pending) isn't running.
+54.157.114.224 (pending) isn't running.
+18.233.111.220 (pending) isn't running.
+18.207.100.137 (pending) isn't running.
+34.232.210.29 (pending) isn't running.
+34.206.52.113 (pending) isn't running.
+18.204.35.105 (pending) isn't running.
+100.25.98.107 (pending) isn't running.
+34.201.6.44 (pending) isn't running.
+34.200.248.185 (pending) isn't running.
+34.234.211.27 (pending) isn't running.
+All aren't running. Wait for 10 sec...
+34.205.166.202 is running.
+18.204.247.183 is running.
+34.200.216.197 is running.
+35.170.53.254 is running.
+35.170.80.0 is running.
+34.201.30.208 is running.
+18.215.33.18 is running.
+18.209.228.30 is running.
+18.204.35.105 is running.
+34.232.95.90 is running.
+100.25.98.107 is running.
+34.201.6.44 is running.
+34.200.248.185 (pending) isn't running.
+34.234.211.27 is running.
+52.54.70.190 is running.
+100.26.5.5 is running.
+18.234.139.84 is running.
+18.208.203.123 is running.
+18.214.36.173 is running.
+18.207.138.219 is running.
+34.231.225.13 is running.
+35.175.108.219 is running.
+18.204.214.136 is running.
+34.205.225.236 is running.
+54.160.43.40 is running.
+18.210.7.186 is running.
+54.83.248.94 is running.
+3.80.12.96 is running.
+34.237.223.60 is running.
+18.207.102.147 is running.
+100.25.246.181 is running.
+18.206.86.66 is running.
+34.200.238.240 is running.
+54.157.114.224 is running.
+18.233.111.220 is running.
+18.207.100.137 is running.
+34.232.210.29 is running.
+34.206.52.113 is running.
+All aren't running. Wait for 10 sec...
+34.200.248.185 is running.
+All are running.
+34.205.166.202
+18.204.247.183
+34.200.216.197
+35.170.53.254
+34.200.234.160
+35.170.80.0
+34.201.30.208
+18.215.33.18
+52.54.70.190
+100.26.5.5
+18.234.139.84
+18.208.203.123
+100.24.119.18
+18.214.36.173
+18.207.138.219
+18.209.228.30
+34.231.225.13
+35.175.108.219
+18.204.214.136
+34.205.225.236
+54.160.43.40
+18.210.7.186
+54.83.248.94
+3.80.12.96
+34.237.223.60
+18.204.35.105
+34.232.95.90
+18.207.102.147
+100.25.246.181
+18.206.86.66
+34.200.238.240
+54.157.114.224
+18.233.111.220
+18.207.100.137
+34.232.210.29
+100.25.98.107
+34.201.6.44
+34.200.248.185
+34.234.211.27
+34.206.52.113
+Wait for 3.00 mins
+There're 40 instances.
+40 are running now.
+--------------------
+0 - Executing scripts on 100.24.119.18
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+1 - Executing scripts on 100.25.246.181
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+2 - Executing scripts on 100.25.98.107
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+3 - Executing scripts on 100.26.5.5
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+4 - Executing scripts on 18.204.214.136
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+5 - Executing scripts on 18.204.247.183
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+6 - Executing scripts on 18.204.35.105
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+7 - Executing scripts on 18.206.86.66
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+8 - Executing scripts on 18.207.100.137
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+9 - Executing scripts on 18.207.102.147
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+10 - Executing scripts on 18.207.138.219
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+11 - Executing scripts on 18.208.203.123
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+12 - Executing scripts on 18.209.228.30
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+13 - Executing scripts on 18.210.7.186
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+14 - Executing scripts on 18.214.36.173
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+15 - Executing scripts on 18.215.33.18
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+16 - Executing scripts on 18.233.111.220
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+17 - Executing scripts on 18.234.139.84
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+18 - Executing scripts on 3.80.12.96
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+19 - Executing scripts on 34.200.216.197
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+20 - Executing scripts on 34.200.234.160
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+21 - Executing scripts on 34.200.238.240
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+22 - Executing scripts on 34.200.248.185
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+23 - Executing scripts on 34.201.30.208
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+24 - Executing scripts on 34.201.6.44
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+25 - Executing scripts on 34.205.166.202
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+26 - Executing scripts on 34.205.225.236
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+27 - Executing scripts on 34.206.52.113
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+28 - Executing scripts on 34.231.225.13
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+29 - Executing scripts on 34.232.210.29
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+30 - Executing scripts on 34.232.95.90
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+31 - Executing scripts on 34.234.211.27
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+32 - Executing scripts on 34.237.223.60
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+33 - Executing scripts on 35.170.53.254
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+34 - Executing scripts on 35.170.80.0
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+35 - Executing scripts on 35.175.108.219
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+36 - Executing scripts on 52.54.70.190
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+37 - Executing scripts on 54.157.114.224
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+38 - Executing scripts on 54.160.43.40
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+--------------------
+39 - Executing scripts on 54.83.248.94
+Run command:#!/bin/bash
+source ~/.customrc
+./scripts/cpfroms3.sh scripts/runIllinoisTemporal-20181201.sh scripts/runIllinoisTemporal.sh && chmod 774 ~/scripts/runIllinoisTemporal.sh &
+./scripts/cpfroms3.sh packages/illinois-temporal/illinois-temporal-1.0.0-20181201.jar ~/code/illinois-temporal/illinois-temporal-1.0.0.jar
+mkdir -p data/nyt-annotated-jsons
+mkdir -p log/illinois-temporal
+mkdir -p results/illinois-temporal
+There're 40 instances.
+40 are running now.
+--------------------
+0 - Executing scripts on 100.24.119.18
+Run command:./scripts/runIllinoisTemporal.sh "1 134 170 206 242 279 314 350 387 422 459 495 530 567 602 64 676 711 748 784 82 856 892 928 964" false 100 >> ~/log/illinois-temporal/ip-100-24-119-18.log &
+--------------------
+1 - Executing scripts on 100.25.246.181
+Run command:./scripts/runIllinoisTemporal.sh "10 135 171 207 243 28 315 351 388 423 46 496 531 568 603 640 677 712 749 785 820 857 893 929 965" false 100 >> ~/log/illinois-temporal/ip-100-25-246-181.log &
+--------------------
+2 - Executing scripts on 100.25.98.107
+Run command:./scripts/runIllinoisTemporal.sh "100 136 172 208 244 280 316 352 389 424 460 497 532 569 604 641 678 713 75 786 821 858 894 93 966" false 100 >> ~/log/illinois-temporal/ip-100-25-98-107.log &
+--------------------
+3 - Executing scripts on 100.26.5.5
+Run command:./scripts/runIllinoisTemporal.sh "1000 137 173 209 245 281 317 353 39 425 461 498 533 57 605 642 679 714 750 787 822 859 895 930 967" false 100 >> ~/log/illinois-temporal/ip-100-26-5-5.log &
+--------------------
+4 - Executing scripts on 18.204.214.136
+Run command:./scripts/runIllinoisTemporal.sh "101 138 174 21 246 282 318 354 390 426 462 499 534 570 606 643 68 715 751 788 823 86 896 931 968" false 100 >> ~/log/illinois-temporal/ip-18-204-214-136.log &
+--------------------
+5 - Executing scripts on 18.204.247.183
+Run command:./scripts/runIllinoisTemporal.sh "102 139 175 210 247 283 319 355 391 427 463 5 535 571 607 644 680 716 752 789 824 860 897 932 969" false 100 >> ~/log/illinois-temporal/ip-18-204-247-183.log &
+--------------------
+6 - Executing scripts on 18.204.35.105
+Run command:./scripts/runIllinoisTemporal.sh "103 14 176 211 248 284 32 356 392 428 464 50 536 572 608 645 681 717 753 79 825 861 898 933 97" false 100 >> ~/log/illinois-temporal/ip-18-204-35-105.log &
+--------------------
+7 - Executing scripts on 18.206.86.66
+Run command:./scripts/runIllinoisTemporal.sh "104 140 177 212 249 285 320 357 393 429 465 500 537 573 609 646 682 718 754 790 826 862 899 934 970" false 100 >> ~/log/illinois-temporal/ip-18-206-86-66.log &
+--------------------
+8 - Executing scripts on 18.207.100.137
+Run command:./scripts/runIllinoisTemporal.sh "105 141 178 213 25 286 321 358 394 43 466 501 538 574 610 647 683 719 755 791 827 863 9 935 971" false 100 >> ~/log/illinois-temporal/ip-18-207-100-137.log &
+--------------------
+9 - Executing scripts on 18.207.102.147
+Run command:./scripts/runIllinoisTemporal.sh "106 142 179 214 250 287 322 359 395 430 467 502 539 575 611 648 684 72 756 792 828 864 90 936 972" false 100 >> ~/log/illinois-temporal/ip-18-207-102-147.log &
+--------------------
+10 - Executing scripts on 18.207.138.219
+Run command:./scripts/runIllinoisTemporal.sh "107 143 18 215 251 288 323 36 396 431 468 503 54 576 612 649 685 720 757 793 829 865 900 937 973" false 100 >> ~/log/illinois-temporal/ip-18-207-138-219.log &
+--------------------
+11 - Executing scripts on 18.208.203.123
+Run command:./scripts/runIllinoisTemporal.sh "108 144 180 216 252 289 324 360 397 432 469 504 540 577 613 65 686 721 758 794 83 866 901 938 974" false 100 >> ~/log/illinois-temporal/ip-18-208-203-123.log &
+--------------------
+12 - Executing scripts on 18.209.228.30
+Run command:./scripts/runIllinoisTemporal.sh "109 145 181 217 253 29 325 361 398 433 47 505 541 578 614 650 687 722 759 795 830 867 902 939 975" false 100 >> ~/log/illinois-temporal/ip-18-209-228-30.log &
+--------------------
+13 - Executing scripts on 18.210.7.186
+Run command:./scripts/runIllinoisTemporal.sh "11 146 182 218 254 290 326 362 399 434 470 506 542 579 615 651 688 723 76 796 831 868 903 94 976" false 100 >> ~/log/illinois-temporal/ip-18-210-7-186.log &
+--------------------
+14 - Executing scripts on 18.214.36.173
+Run command:./scripts/runIllinoisTemporal.sh "110 147 183 219 255 291 327 363 4 435 471 507 543 58 616 652 689 724 760 797 832 869 904 940 977" false 100 >> ~/log/illinois-temporal/ip-18-214-36-173.log &
+--------------------
+15 - Executing scripts on 18.215.33.18
+Run command:./scripts/runIllinoisTemporal.sh "111 148 184 22 256 292 328 364 40 436 472 508 544 580 617 653 69 725 761 798 833 87 905 941 978" false 100 >> ~/log/illinois-temporal/ip-18-215-33-18.log &
+--------------------
+16 - Executing scripts on 18.233.111.220
+Run command:./scripts/runIllinoisTemporal.sh "112 149 185 220 257 293 329 365 400 437 473 509 545 581 618 654 690 726 762 799 834 870 906 942 979" false 100 >> ~/log/illinois-temporal/ip-18-233-111-220.log &
+--------------------
+17 - Executing scripts on 18.234.139.84
+Run command:./scripts/runIllinoisTemporal.sh "113 15 186 221 258 294 33 366 401 438 474 51 546 582 619 655 691 727 763 8 835 871 907 943 98" false 100 >> ~/log/illinois-temporal/ip-18-234-139-84.log &
+--------------------
+18 - Executing scripts on 3.80.12.96
+Run command:./scripts/runIllinoisTemporal.sh "114 150 187 222 259 295 330 367 402 439 475 510 547 583 62 656 692 728 764 80 836 872 908 944 980" false 100 >> ~/log/illinois-temporal/ip-3-80-12-96.log &
+--------------------
+19 - Executing scripts on 34.200.216.197
+Run command:./scripts/runIllinoisTemporal.sh "115 151 188 223 26 296 331 368 403 44 476 511 548 584 620 657 693 729 765 800 837 873 909 945 981" false 100 >> ~/log/illinois-temporal/ip-34-200-216-197.log &
+--------------------
+20 - Executing scripts on 34.200.234.160
+Run command:./scripts/runIllinoisTemporal.sh "116 152 189 224 260 297 332 369 404 440 477 512 549 585 621 658 694 73 766 801 838 874 91 946 982" false 100 >> ~/log/illinois-temporal/ip-34-200-234-160.log &
+--------------------
+21 - Executing scripts on 34.200.238.240
+Run command:./scripts/runIllinoisTemporal.sh "117 153 19 225 261 298 333 37 405 441 478 513 55 586 622 659 695 730 767 802 839 875 910 947 983" false 100 >> ~/log/illinois-temporal/ip-34-200-238-240.log &
+--------------------
+22 - Executing scripts on 34.200.248.185
+Run command:./scripts/runIllinoisTemporal.sh "118 154 190 226 262 299 334 370 406 442 479 514 550 587 623 66 696 731 768 803 84 876 911 948 984" false 100 >> ~/log/illinois-temporal/ip-34-200-248-185.log &
+--------------------
+23 - Executing scripts on 34.201.30.208
+Run command:./scripts/runIllinoisTemporal.sh "119 155 191 227 263 3 335 371 407 443 48 515 551 588 624 660 697 732 769 804 840 877 912 949 985" false 100 >> ~/log/illinois-temporal/ip-34-201-30-208.log &
+--------------------
+24 - Executing scripts on 34.201.6.44
+Run command:./scripts/runIllinoisTemporal.sh "12 156 192 228 264 30 336 372 408 444 480 516 552 589 625 661 698 733 77 805 841 878 913 95 986" false 100 >> ~/log/illinois-temporal/ip-34-201-6-44.log &
+--------------------
+25 - Executing scripts on 34.205.166.202
+Run command:./scripts/runIllinoisTemporal.sh "120 157 193 229 265 300 337 373 409 445 481 517 553 59 626 662 699 734 770 806 842 879 914 950 987" false 100 >> ~/log/illinois-temporal/ip-34-205-166-202.log &
+--------------------
+26 - Executing scripts on 34.205.225.236
+Run command:./scripts/runIllinoisTemporal.sh "121 158 194 23 266 301 338 374 41 446 482 518 554 590 627 663 7 735 771 807 843 88 915 951 988" false 100 >> ~/log/illinois-temporal/ip-34-205-225-236.log &
+--------------------
+27 - Executing scripts on 34.206.52.113
+Run command:./scripts/runIllinoisTemporal.sh "122 159 195 230 267 302 339 375 410 447 483 519 555 591 628 664 70 736 772 808 844 880 916 952 989" false 100 >> ~/log/illinois-temporal/ip-34-206-52-113.log &
+--------------------
+28 - Executing scripts on 34.231.225.13
+Run command:./scripts/runIllinoisTemporal.sh "123 16 196 231 268 303 34 376 411 448 484 52 556 592 629 665 700 737 773 809 845 881 917 953 99" false 100 >> ~/log/illinois-temporal/ip-34-231-225-13.log &
+--------------------
+29 - Executing scripts on 34.232.210.29
+Run command:./scripts/runIllinoisTemporal.sh "124 160 197 232 269 304 340 377 412 449 485 520 557 593 63 666 701 738 774 81 846 882 918 954 990" false 100 >> ~/log/illinois-temporal/ip-34-232-210-29.log &
+--------------------
+30 - Executing scripts on 34.232.95.90
+Run command:./scripts/runIllinoisTemporal.sh "125 161 198 233 27 305 341 378 413 45 486 521 558 594 630 667 702 739 775 810 847 883 919 955 991" false 100 >> ~/log/illinois-temporal/ip-34-232-95-90.log &
+--------------------
+31 - Executing scripts on 34.234.211.27
+Run command:./scripts/runIllinoisTemporal.sh "126 162 199 234 270 306 342 379 414 450 487 522 559 595 631 668 703 74 776 811 848 884 92 956 992" false 100 >> ~/log/illinois-temporal/ip-34-234-211-27.log &
+--------------------
+32 - Executing scripts on 34.237.223.60
+Run command:./scripts/runIllinoisTemporal.sh "127 163 2 235 271 307 343 38 415 451 488 523 56 596 632 669 704 740 777 812 849 885 920 957 993" false 100 >> ~/log/illinois-temporal/ip-34-237-223-60.log &
+--------------------
+33 - Executing scripts on 35.170.53.254
+Run command:./scripts/runIllinoisTemporal.sh "128 164 20 236 272 308 344 380 416 452 489 524 560 597 633 67 705 741 778 813 85 886 921 958 994" false 100 >> ~/log/illinois-temporal/ip-35-170-53-254.log &
+--------------------
+34 - Executing scripts on 35.170.80.0
+Run command:./scripts/runIllinoisTemporal.sh "129 165 200 237 273 309 345 381 417 453 49 525 561 598 634 670 706 742 779 814 850 887 922 959 995" false 100 >> ~/log/illinois-temporal/ip-35-170-80-0.log &
+--------------------
+35 - Executing scripts on 35.175.108.219
+Run command:./scripts/runIllinoisTemporal.sh "13 166 201 238 274 31 346 382 418 454 490 526 562 599 635 671 707 743 78 815 851 888 923 96 996" false 100 >> ~/log/illinois-temporal/ip-35-175-108-219.log &
+--------------------
+36 - Executing scripts on 52.54.70.190
+Run command:./scripts/runIllinoisTemporal.sh "130 167 202 239 275 310 347 383 419 455 491 527 563 6 636 672 708 744 780 816 852 889 924 960 997" false 100 >> ~/log/illinois-temporal/ip-52-54-70-190.log &
+--------------------
+37 - Executing scripts on 54.157.114.224
+Run command:./scripts/runIllinoisTemporal.sh "131 168 203 24 276 311 348 384 42 456 492 528 564 60 637 673 709 745 781 817 853 89 925 961 998" false 100 >> ~/log/illinois-temporal/ip-54-157-114-224.log &
+--------------------
+38 - Executing scripts on 54.160.43.40
+Run command:./scripts/runIllinoisTemporal.sh "132 169 204 240 277 312 349 385 420 457 493 529 565 600 638 674 71 746 782 818 854 890 926 962 999" false 100 >> ~/log/illinois-temporal/ip-54-160-43-40.log &
+--------------------
+39 - Executing scripts on 54.83.248.94
+Run command:./scripts/runIllinoisTemporal.sh "133 17 205 241 278 313 35 386 421 458 494 53 566 601 639 675 710 747 783 819 855 891 927 963" false 100 >> ~/log/illinois-temporal/ip-54-83-248-94.log &
+118 154 190 226 262 299 334 370 406 442 479 514 550 587 623 66 696 731 768 803 84 876 911 948 984==>34.200.248.185
+104 140 177 212 249 285 320 357 393 429 465 500 537 573 609 646 682 718 754 790 826 862 899 934 970==>18.206.86.66
+131 168 203 24 276 311 348 384 42 456 492 528 564 60 637 673 709 745 781 817 853 89 925 961 998==>54.157.114.224
+101 138 174 21 246 282 318 354 390 426 462 499 534 570 606 643 68 715 751 788 823 86 896 931 968==>18.204.214.136
+115 151 188 223 26 296 331 368 403 44 476 511 548 584 620 657 693 729 765 800 837 873 909 945 981==>34.200.216.197
+123 16 196 231 268 303 34 376 411 448 484 52 556 592 629 665 700 737 773 809 845 881 917 953 99==>34.231.225.13
+122 159 195 230 267 302 339 375 410 447 483 519 555 591 628 664 70 736 772 808 844 880 916 952 989==>34.206.52.113
+103 14 176 211 248 284 32 356 392 428 464 50 536 572 608 645 681 717 753 79 825 861 898 933 97==>18.204.35.105
+133 17 205 241 278 313 35 386 421 458 494 53 566 601 639 675 710 747 783 819 855 891 927 963==>54.83.248.94
+129 165 200 237 273 309 345 381 417 453 49 525 561 598 634 670 706 742 779 814 850 887 922 959 995==>35.170.80.0
+106 142 179 214 250 287 322 359 395 430 467 502 539 575 611 648 684 72 756 792 828 864 90 936 972==>18.207.102.147
+107 143 18 215 251 288 323 36 396 431 468 503 54 576 612 649 685 720 757 793 829 865 900 937 973==>18.207.138.219
+11 146 182 218 254 290 326 362 399 434 470 506 542 579 615 651 688 723 76 796 831 868 903 94 976==>18.210.7.186
+114 150 187 222 259 295 330 367 402 439 475 510 547 583 62 656 692 728 764 80 836 872 908 944 980==>3.80.12.96
+127 163 2 235 271 307 343 38 415 451 488 523 56 596 632 669 704 740 777 812 849 885 920 957 993==>34.237.223.60
+108 144 180 216 252 289 324 360 397 432 469 504 540 577 613 65 686 721 758 794 83 866 901 938 974==>18.208.203.123
+120 157 193 229 265 300 337 373 409 445 481 517 553 59 626 662 699 734 770 806 842 879 914 950 987==>34.205.166.202
+117 153 19 225 261 298 333 37 405 441 478 513 55 586 622 659 695 730 767 802 839 875 910 947 983==>34.200.238.240
+102 139 175 210 247 283 319 355 391 427 463 5 535 571 607 644 680 716 752 789 824 860 897 932 969==>18.204.247.183
+126 162 199 234 270 306 342 379 414 450 487 522 559 595 631 668 703 74 776 811 848 884 92 956 992==>34.234.211.27
+1 134 170 206 242 279 314 350 387 422 459 495 530 567 602 64 676 711 748 784 82 856 892 928 964==>100.24.119.18
+111 148 184 22 256 292 328 364 40 436 472 508 544 580 617 653 69 725 761 798 833 87 905 941 978==>18.215.33.18
+113 15 186 221 258 294 33 366 401 438 474 51 546 582 619 655 691 727 763 8 835 871 907 943 98==>18.234.139.84
+132 169 204 240 277 312 349 385 420 457 493 529 565 600 638 674 71 746 782 818 854 890 926 962 999==>54.160.43.40
+110 147 183 219 255 291 327 363 4 435 471 507 543 58 616 652 689 724 760 797 832 869 904 940 977==>18.214.36.173
+124 160 197 232 269 304 340 377 412 449 485 520 557 593 63 666 701 738 774 81 846 882 918 954 990==>34.232.210.29
+130 167 202 239 275 310 347 383 419 455 491 527 563 6 636 672 708 744 780 816 852 889 924 960 997==>52.54.70.190
+121 158 194 23 266 301 338 374 41 446 482 518 554 590 627 663 7 735 771 807 843 88 915 951 988==>34.205.225.236
+128 164 20 236 272 308 344 380 416 452 489 524 560 597 633 67 705 741 778 813 85 886 921 958 994==>35.170.53.254
+105 141 178 213 25 286 321 358 394 43 466 501 538 574 610 647 683 719 755 791 827 863 9 935 971==>18.207.100.137
+10 135 171 207 243 28 315 351 388 423 46 496 531 568 603 640 677 712 749 785 820 857 893 929 965==>100.25.246.181
+116 152 189 224 260 297 332 369 404 440 477 512 549 585 621 658 694 73 766 801 838 874 91 946 982==>34.200.234.160
+100 136 172 208 244 280 316 352 389 424 460 497 532 569 604 641 678 713 75 786 821 858 894 93 966==>100.25.98.107
+13 166 201 238 274 31 346 382 418 454 490 526 562 599 635 671 707 743 78 815 851 888 923 96 996==>35.175.108.219
+119 155 191 227 263 3 335 371 407 443 48 515 551 588 624 660 697 732 769 804 840 877 912 949 985==>34.201.30.208
+12 156 192 228 264 30 336 372 408 444 480 516 552 589 625 661 698 733 77 805 841 878 913 95 986==>34.201.6.44
+109 145 181 217 253 29 325 361 398 433 47 505 541 578 614 650 687 722 759 795 830 867 902 939 975==>18.209.228.30
+112 149 185 220 257 293 329 365 400 437 473 509 545 581 618 654 690 726 762 799 834 870 906 942 979==>18.233.111.220
+125 161 198 233 27 305 341 378 413 45 486 521 558 594 630 667 702 739 775 810 847 883 919 955 991==>34.232.95.90
+1000 137 173 209 245 281 317 353 39 425 461 498 533 57 605 642 679 714 750 787 822 859 895 930 967==>100.26.5.5
+partition 1 finished
+partition 134 unfinished
+Wait for 1.00 min
+partition 10 unfinished
+Wait for 1.00 min
+partition 100 unfinished
+Wait for 1.00 min
+partition 1000 finished
+partition 137 unfinished
+Wait for 1.00 min
+partition 101 finished
+partition 138 unfinished
+Wait for 1.00 min
+partition 102 finished
+partition 139 finished
+partition 175 unfinished
+Wait for 1.00 min
+partition 103 finished
+partition 14 finished
+partition 176 unfinished
+Wait for 1.00 min
+partition 104 finished
+partition 140 finished
+partition 177 finished
+partition 212 unfinished
+Wait for 1.00 min
+partition 105 finished
+partition 141 finished
+partition 178 finished
+partition 213 unfinished
+Wait for 1.00 min
+partition 106 finished
+partition 142 finished
+partition 179 finished
+partition 214 unfinished
+Wait for 1.00 min
+partition 107 finished
+partition 143 finished
+partition 18 finished
+partition 215 finished
+partition 251 unfinished
+Wait for 1.00 min
+partition 108 finished
+partition 144 finished
+partition 180 finished
+partition 216 finished
+partition 252 unfinished
+Wait for 1.00 min
+partition 109 finished
+partition 145 finished
+partition 181 finished
+partition 217 finished
+partition 253 unfinished
+Wait for 1.00 min
+partition 11 finished
+partition 146 finished
+partition 182 finished
+partition 218 finished
+partition 254 finished
+partition 290 unfinished
+Wait for 1.00 min
+partition 110 finished
+partition 147 finished
+partition 183 finished
+partition 219 finished
+partition 255 finished
+partition 291 unfinished
+Wait for 1.00 min
+partition 111 finished
+partition 148 finished
+partition 184 finished
+partition 22 finished
+partition 256 finished
+partition 292 finished
+partition 328 unfinished
+Wait for 1.00 min
+partition 112 finished
+partition 149 finished
+partition 185 finished
+partition 220 finished
+partition 257 finished
+partition 293 finished
+partition 329 unfinished
+Wait for 1.00 min
+partition 113 finished
+partition 15 finished
+partition 186 finished
+partition 221 finished
+partition 258 finished
+partition 294 finished
+partition 33 finished
+partition 366 unfinished
+Wait for 1.00 min
+partition 114 finished
+partition 150 finished
+partition 187 finished
+partition 222 finished
+partition 259 finished
+partition 295 finished
+partition 330 finished
+partition 367 unfinished
+Wait for 1.00 min
+partition 115 finished
+partition 151 finished
+partition 188 finished
+partition 223 finished
+partition 26 finished
+partition 296 finished
+partition 331 finished
+partition 368 unfinished
+Wait for 1.00 min
+partition 116 finished
+partition 152 finished
+partition 189 finished
+partition 224 finished
+partition 260 finished
+partition 297 finished
+partition 332 finished
+partition 369 finished
+partition 404 unfinished
+Wait for 1.00 min
+partition 117 finished
+partition 153 finished
+partition 19 finished
+partition 225 finished
+partition 261 finished
+partition 298 finished
+partition 333 finished
+partition 37 finished
+partition 405 unfinished
+Wait for 1.00 min
+partition 118 finished
+partition 154 finished
+partition 190 finished
+partition 226 finished
+partition 262 finished
+partition 299 finished
+partition 334 finished
+partition 370 finished
+partition 406 finished
+partition 442 unfinished
+Wait for 1.00 min
+partition 119 finished
+partition 155 finished
+partition 191 finished
+partition 227 finished
+partition 263 finished
+partition 3 finished
+partition 335 finished
+partition 371 finished
+partition 407 finished
+partition 443 unfinished
+Wait for 1.00 min
+partition 12 finished
+partition 156 finished
+partition 192 finished
+partition 228 finished
+partition 264 finished
+partition 30 finished
+partition 336 finished
+partition 372 finished
+partition 408 finished
+partition 444 unfinished
+Wait for 1.00 min
+partition 120 finished
+partition 157 finished
+partition 193 finished
+partition 229 finished
+partition 265 finished
+partition 300 finished
+partition 337 finished
+partition 373 finished
+partition 409 finished
+partition 445 finished
+partition 481 unfinished
+Wait for 1.00 min
+partition 121 finished
+partition 158 finished
+partition 194 finished
+partition 23 finished
+partition 266 finished
+partition 301 finished
+partition 338 finished
+partition 374 finished
+partition 41 finished
+partition 446 finished
+partition 482 unfinished
+Wait for 1.00 min
+partition 122 finished
+partition 159 finished
+partition 195 finished
+partition 230 finished
+partition 267 finished
+partition 302 finished
+partition 339 finished
+partition 375 finished
+partition 410 finished
+partition 447 finished
+partition 483 finished
+partition 519 unfinished
+Wait for 1.00 min
+partition 123 finished
+partition 16 finished
+partition 196 finished
+partition 231 finished
+partition 268 finished
+partition 303 finished
+partition 34 finished
+partition 376 finished
+partition 411 finished
+partition 448 finished
+partition 484 finished
+partition 52 unfinished
+Wait for 1.00 min
+partition 124 finished
+partition 160 finished
+partition 197 finished
+partition 232 finished
+partition 269 finished
+partition 304 finished
+partition 340 finished
+partition 377 finished
+partition 412 finished
+partition 449 finished
+partition 485 finished
+partition 520 finished
+partition 557 unfinished
+Wait for 1.00 min
+partition 125 finished
+partition 161 finished
+partition 198 finished
+partition 233 finished
+partition 27 finished
+partition 305 finished
+partition 341 finished
+partition 378 finished
+partition 413 finished
+partition 45 finished
+partition 486 finished
+partition 521 finished
+partition 558 unfinished
+Wait for 1.00 min
+partition 126 finished
+partition 162 finished
+partition 199 finished
+partition 234 finished
+partition 270 finished
+partition 306 finished
+partition 342 finished
+partition 379 finished
+partition 414 finished
+partition 450 finished
+partition 487 finished
+partition 522 finished
+partition 559 finished
+partition 595 unfinished
+Wait for 1.00 min
+partition 127 finished
+partition 163 finished
+partition 2 finished
+partition 235 finished
+partition 271 finished
+partition 307 finished
+partition 343 finished
+partition 38 finished
+partition 415 finished
+partition 451 finished
+partition 488 finished
+partition 523 finished
+partition 56 finished
+partition 596 unfinished
+Wait for 1.00 min
+partition 128 finished
+partition 164 finished
+partition 20 finished
+partition 236 finished
+partition 272 finished
+partition 308 finished
+partition 344 finished
+partition 380 finished
+partition 416 finished
+partition 452 finished
+partition 489 finished
+partition 524 finished
+partition 560 finished
+partition 597 unfinished
+Wait for 1.00 min
+partition 129 finished
+partition 165 finished
+partition 200 finished
+partition 237 finished
+partition 273 finished
+partition 309 finished
+partition 345 finished
+partition 381 finished
+partition 417 finished
+partition 453 finished
+partition 49 finished
+partition 525 finished
+partition 561 finished
+partition 598 finished
+partition 634 unfinished
+Wait for 1.00 min
+partition 13 finished
+partition 166 finished
+partition 201 finished
+partition 238 finished
+partition 274 finished
+partition 31 finished
+partition 346 finished
+partition 382 finished
+partition 418 finished
+partition 454 finished
+partition 490 finished
+partition 526 finished
+partition 562 finished
+partition 599 finished
+partition 635 unfinished
+Wait for 1.00 min
+partition 130 finished
+partition 167 finished
+partition 202 finished
+partition 239 finished
+partition 275 finished
+partition 310 finished
+partition 347 finished
+partition 383 finished
+partition 419 finished
+partition 455 finished
+partition 491 finished
+partition 527 finished
+partition 563 finished
+partition 6 finished
+partition 636 finished
+partition 672 unfinished
+Wait for 1.00 min
+partition 131 finished
+partition 168 finished
+partition 203 finished
+partition 24 finished
+partition 276 finished
+partition 311 finished
+partition 348 finished
+partition 384 finished
+partition 42 finished
+partition 456 finished
+partition 492 finished
+partition 528 finished
+partition 564 finished
+partition 60 finished
+partition 637 finished
+partition 673 unfinished
+Wait for 1.00 min
+partition 132 finished
+partition 169 finished
+partition 204 finished
+partition 240 finished
+partition 277 finished
+partition 312 finished
+partition 349 finished
+partition 385 finished
+partition 420 finished
+partition 457 finished
+partition 493 finished
+partition 529 finished
+partition 565 finished
+partition 600 finished
+partition 638 finished
+partition 674 finished
+partition 71 unfinished
+Wait for 1.00 min
+partition 133 finished
+partition 17 finished
+partition 205 finished
+partition 241 finished
+partition 278 finished
+partition 313 finished
+partition 35 finished
+partition 386 finished
+partition 421 finished
+partition 458 finished
+partition 494 finished
+partition 53 finished
+partition 566 finished
+partition 601 finished
+partition 639 finished
+partition 675 finished
+partition 710 unfinished
+Wait for 1.00 min
+Remaining instances: 40
+------------------------
+100.24.119.18
+100.25.246.181
+100.25.98.107
+100.26.5.5
+18.204.214.136
+18.204.247.183
+18.204.35.105
+18.206.86.66
+18.207.100.137
+18.207.102.147
+18.207.138.219
+18.208.203.123
+18.209.228.30
+18.210.7.186
+18.214.36.173
+18.215.33.18
+18.233.111.220
+18.234.139.84
+3.80.12.96
+34.200.216.197
+34.200.234.160
+34.200.238.240
+34.200.248.185
+34.201.30.208
+34.201.6.44
+34.205.166.202
+34.205.225.236
+34.206.52.113
+34.231.225.13
+34.232.210.29
+34.232.95.90
+34.234.211.27
+34.237.223.60
+35.170.53.254
+35.170.80.0
+35.175.108.219
+52.54.70.190
+54.157.114.224
+54.160.43.40
+54.83.248.94
+partition 134 finished
+partition 170 finished
+partition 206 finished
+partition 242 finished
+partition 279 finished
+partition 314 finished
+partition 350 finished
+partition 387 finished
+partition 422 finished
+partition 459 finished
+partition 495 finished
+partition 530 finished
+partition 567 finished
+partition 602 finished
+partition 64 finished
+partition 676 unfinished
+Wait for 1.00 min
+partition 10 finished
+partition 135 finished
+partition 171 finished
+partition 207 finished
+partition 243 finished
+partition 28 finished
+partition 315 finished
+partition 351 finished
+partition 388 finished
+partition 423 finished
+partition 46 finished
+partition 496 finished
+partition 531 finished
+partition 568 finished
+partition 603 finished
+partition 640 finished
+partition 677 finished
+partition 712 unfinished
+Wait for 1.00 min
+partition 100 finished
+partition 136 finished
+partition 172 finished
+partition 208 finished
+partition 244 finished
+partition 280 finished
+partition 316 finished
+partition 352 finished
+partition 389 finished
+partition 424 finished
+partition 460 finished
+partition 497 finished
+partition 532 finished
+partition 569 finished
+partition 604 finished
+partition 641 finished
+partition 678 finished
+partition 713 finished
+partition 75 unfinished
+Wait for 1.00 min
+partition 137 finished
+partition 173 finished
+partition 209 finished
+partition 245 finished
+partition 281 finished
+partition 317 finished
+partition 353 finished
+partition 39 finished
+partition 425 finished
+partition 461 finished
+partition 498 finished
+partition 533 finished
+partition 57 finished
+partition 605 finished
+partition 642 finished
+partition 679 finished
+partition 714 finished
+partition 750 unfinished
+Wait for 1.00 min
+partition 138 finished
+partition 174 finished
+partition 21 finished
+partition 246 finished
+partition 282 finished
+partition 318 finished
+partition 354 finished
+partition 390 finished
+partition 426 finished
+partition 462 finished
+partition 499 finished
+partition 534 finished
+partition 570 finished
+partition 606 finished
+partition 643 finished
+partition 68 finished
+partition 715 finished
+partition 751 unfinished
+Wait for 1.00 min
+partition 175 finished
+partition 210 finished
+partition 247 finished
+partition 283 finished
+partition 319 finished
+partition 355 finished
+partition 391 finished
+partition 427 finished
+partition 463 finished
+partition 5 finished
+partition 535 finished
+partition 571 finished
+partition 607 finished
+partition 644 finished
+partition 680 finished
+partition 716 finished
+partition 752 finished
+partition 789 unfinished
+Wait for 1.00 min
+partition 176 finished
+partition 211 finished
+partition 248 finished
+partition 284 finished
+partition 32 finished
+partition 356 finished
+partition 392 finished
+partition 428 finished
+partition 464 finished
+partition 50 finished
+partition 536 finished
+partition 572 finished
+partition 608 finished
+partition 645 finished
+partition 681 finished
+partition 717 finished
+partition 753 finished
+partition 79 unfinished
+Wait for 1.00 min
+partition 212 finished
+partition 249 finished
+partition 285 finished
+partition 320 finished
+partition 357 finished
+partition 393 finished
+partition 429 finished
+partition 465 finished
+partition 500 finished
+partition 537 finished
+partition 573 finished
+partition 609 finished
+partition 646 finished
+partition 682 finished
+partition 718 finished
+partition 754 finished
+partition 790 finished
+partition 826 unfinished
+Wait for 1.00 min
+partition 213 finished
+partition 25 finished
+partition 286 finished
+partition 321 finished
+partition 358 finished
+partition 394 finished
+partition 43 finished
+partition 466 finished
+partition 501 finished
+partition 538 finished
+partition 574 finished
+partition 610 finished
+partition 647 finished
+partition 683 finished
+partition 719 finished
+partition 755 finished
+partition 791 finished
+partition 827 unfinished
+Wait for 1.00 min
+partition 214 finished
+partition 250 finished
+partition 287 finished
+partition 322 finished
+partition 359 finished
+partition 395 finished
+partition 430 finished
+partition 467 finished
+partition 502 finished
+partition 539 finished
+partition 575 finished
+partition 611 finished
+partition 648 finished
+partition 684 finished
+partition 72 finished
+partition 756 finished
+partition 792 finished
+partition 828 finished
+partition 864 unfinished
+Wait for 1.00 min
+partition 251 finished
+partition 288 finished
+partition 323 finished
+partition 36 finished
+partition 396 finished
+partition 431 finished
+partition 468 finished
+partition 503 finished
+partition 54 finished
+partition 576 finished
+partition 612 finished
+partition 649 finished
+partition 685 finished
+partition 720 finished
+partition 757 finished
+partition 793 finished
+partition 829 finished
+partition 865 unfinished
+Wait for 1.00 min
+partition 252 finished
+partition 289 finished
+partition 324 finished
+partition 360 finished
+partition 397 finished
+partition 432 finished
+partition 469 finished
+partition 504 finished
+partition 540 finished
+partition 577 finished
+partition 613 finished
+partition 65 finished
+partition 686 finished
+partition 721 finished
+partition 758 finished
+partition 794 finished
+partition 83 finished
+partition 866 finished
+partition 901 unfinished
+Wait for 1.00 min
+partition 253 finished
+partition 29 finished
+partition 325 finished
+partition 361 finished
+partition 398 finished
+partition 433 finished
+partition 47 finished
+partition 505 finished
+partition 541 finished
+partition 578 finished
+partition 614 finished
+partition 650 finished
+partition 687 finished
+partition 722 finished
+partition 759 finished
+partition 795 finished
+partition 830 finished
+partition 867 finished
+partition 902 unfinished
+Wait for 1.00 min
+partition 290 finished
+partition 326 finished
+partition 362 finished
+partition 399 finished
+partition 434 finished
+partition 470 finished
+partition 506 finished
+partition 542 finished
+partition 579 finished
+partition 615 finished
+partition 651 finished
+partition 688 finished
+partition 723 finished
+partition 76 finished
+partition 796 finished
+partition 831 finished
+partition 868 finished
+partition 903 unfinished
+Wait for 1.00 min
+partition 291 finished
+partition 327 finished
+partition 363 finished
+partition 4 finished
+partition 435 finished
+partition 471 finished
+partition 507 finished
+partition 543 finished
+partition 58 finished
+partition 616 finished
+partition 652 finished
+partition 689 finished
+partition 724 finished
+partition 760 finished
+partition 797 finished
+partition 832 finished
+partition 869 finished
+partition 904 finished
+partition 940 unfinished
+Wait for 1.00 min
+partition 328 finished
+partition 364 finished
+partition 40 finished
+partition 436 finished
+partition 472 finished
+partition 508 finished
+partition 544 finished
+partition 580 finished
+partition 617 finished
+partition 653 finished
+partition 69 finished
+partition 725 finished
+partition 761 finished
+partition 798 finished
+partition 833 finished
+partition 87 finished
+partition 905 finished
+partition 941 unfinished
+Wait for 1.00 min
+partition 329 finished
+partition 365 finished
+partition 400 finished
+partition 437 finished
+partition 473 finished
+partition 509 finished
+partition 545 finished
+partition 581 finished
+partition 618 finished
+partition 654 finished
+partition 690 finished
+partition 726 finished
+partition 762 finished
+partition 799 finished
+partition 834 finished
+partition 870 finished
+partition 906 finished
+partition 942 finished
+partition 979 unfinished
+Wait for 1.00 min
+partition 366 finished
+partition 401 finished
+partition 438 finished
+partition 474 finished
+partition 51 finished
+partition 546 finished
+partition 582 finished
+partition 619 finished
+partition 655 finished
+partition 691 finished
+partition 727 finished
+partition 763 finished
+partition 8 finished
+partition 835 finished
+partition 871 finished
+partition 907 finished
+partition 943 finished
+partition 98 unfinished
+Wait for 1.00 min
+partition 367 finished
+partition 402 finished
+partition 439 finished
+partition 475 finished
+partition 510 finished
+partition 547 finished
+partition 583 finished
+partition 62 finished
+partition 656 finished
+partition 692 finished
+partition 728 finished
+partition 764 finished
+partition 80 finished
+partition 836 finished
+partition 872 finished
+partition 908 finished
+partition 944 finished
+partition 980 unfinished
+Wait for 1.00 min
+partition 368 finished
+partition 403 finished
+partition 44 finished
+partition 476 finished
+partition 511 finished
+partition 548 finished
+partition 584 finished
+partition 620 finished
+partition 657 finished
+partition 693 finished
+partition 729 finished
+partition 765 finished
+partition 800 finished
+partition 837 finished
+partition 873 finished
+partition 909 finished
+partition 945 finished
+partition 981 finished
+115 151 188 223 26 296 331 368 403 44 476 511 548 584 620 657 693 729 765 800 837 873 909 945 981 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-200-216-197.log logs/illinois-temporal-postprocessing/ip-34-200-216-197.log
+Completed 256.0 KiB/567.9 KiB (5.9 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/567.9 KiB (10.6 MiB/s) with 1 file(s) remainingCompleted 567.9 KiB/567.9 KiB (5.9 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-34-200-216-197.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-200-216-197.log
+
+[31m[0m
+Stop instance
+i-08e5eadcaee2fecb3 is stopped now.
+partition 405 finished
+partition 441 finished
+partition 478 finished
+partition 513 finished
+partition 55 finished
+partition 586 finished
+partition 622 finished
+partition 659 finished
+partition 695 finished
+partition 730 finished
+partition 767 finished
+partition 802 finished
+partition 839 finished
+partition 875 finished
+partition 910 finished
+partition 947 finished
+partition 983 finished
+117 153 19 225 261 298 333 37 405 441 478 513 55 586 622 659 695 730 767 802 839 875 910 947 983 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-200-238-240.log logs/illinois-temporal-postprocessing/ip-34-200-238-240.log
+Completed 256.0 KiB/574.8 KiB (5.7 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/574.8 KiB (10.1 MiB/s) with 1 file(s) remainingCompleted 574.8 KiB/574.8 KiB (5.9 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-34-200-238-240.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-200-238-240.log
+
+[31m[0m
+Stop instance
+i-0b4ac55689153ac36 is stopped now.
+partition 443 finished
+partition 48 finished
+partition 515 finished
+partition 551 finished
+partition 588 finished
+partition 624 finished
+partition 660 finished
+partition 697 finished
+partition 732 finished
+partition 769 finished
+partition 804 finished
+partition 840 finished
+partition 877 finished
+partition 912 finished
+partition 949 finished
+partition 985 finished
+119 155 191 227 263 3 335 371 407 443 48 515 551 588 624 660 697 732 769 804 840 877 912 949 985 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-201-30-208.log logs/illinois-temporal-postprocessing/ip-34-201-30-208.log
+Completed 256.0 KiB/572.6 KiB (6.2 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/572.6 KiB (11.3 MiB/s) with 1 file(s) remainingCompleted 572.6 KiB/572.6 KiB (5.2 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-34-201-30-208.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-201-30-208.log
+
+[31m[0m
+Stop instance
+i-06d5f880794a04018 is stopped now.
+partition 481 finished
+partition 517 finished
+partition 553 finished
+partition 59 finished
+partition 626 finished
+partition 662 finished
+partition 699 finished
+partition 734 finished
+partition 770 finished
+partition 806 finished
+partition 842 finished
+partition 879 finished
+partition 914 finished
+partition 950 finished
+partition 987 finished
+120 157 193 229 265 300 337 373 409 445 481 517 553 59 626 662 699 734 770 806 842 879 914 950 987 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-205-166-202.log logs/illinois-temporal-postprocessing/ip-34-205-166-202.log
+Completed 256.0 KiB/572.6 KiB (3.4 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/572.6 KiB (6.1 MiB/s) with 1 file(s) remainingCompleted 572.6 KiB/572.6 KiB (3.9 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-205-166-202.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-205-166-202.log
+
+[31m[0m
+Stop instance
+i-06e24235d15bbba4a is stopped now.
+partition 519 finished
+partition 555 finished
+partition 591 finished
+partition 628 finished
+partition 664 finished
+partition 70 finished
+partition 736 finished
+partition 772 finished
+partition 808 finished
+partition 844 finished
+partition 880 finished
+partition 916 finished
+partition 952 finished
+partition 989 finished
+122 159 195 230 267 302 339 375 410 447 483 519 555 591 628 664 70 736 772 808 844 880 916 952 989 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-206-52-113.log logs/illinois-temporal-postprocessing/ip-34-206-52-113.log
+Completed 256.0 KiB/576.3 KiB (3.0 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/576.3 KiB (5.7 MiB/s) with 1 file(s) remainingCompleted 576.3 KiB/576.3 KiB (4.2 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-206-52-113.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-206-52-113.log
+
+[31m[0m
+Stop instance
+i-02203f9ba2eae4f29 is stopped now.
+partition 557 finished
+partition 593 finished
+partition 63 finished
+partition 666 finished
+partition 701 finished
+partition 738 finished
+partition 774 finished
+partition 81 finished
+partition 846 finished
+partition 882 finished
+partition 918 finished
+partition 954 finished
+partition 990 finished
+124 160 197 232 269 304 340 377 412 449 485 520 557 593 63 666 701 738 774 81 846 882 918 954 990 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-232-210-29.log logs/illinois-temporal-postprocessing/ip-34-232-210-29.log
+Completed 256.0 KiB/579.2 KiB (4.3 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/579.2 KiB (8.2 MiB/s) with 1 file(s) remainingCompleted 579.2 KiB/579.2 KiB (5.4 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-232-210-29.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-232-210-29.log
+
+[31m[0m
+Stop instance
+i-06622f27ee2da8f35 is stopped now.
+partition 595 finished
+partition 631 finished
+partition 668 finished
+partition 703 finished
+partition 74 finished
+partition 776 finished
+partition 811 finished
+partition 848 finished
+partition 884 finished
+partition 92 finished
+partition 956 finished
+partition 992 finished
+126 162 199 234 270 306 342 379 414 450 487 522 559 595 631 668 703 74 776 811 848 884 92 956 992 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-234-211-27.log logs/illinois-temporal-postprocessing/ip-34-234-211-27.log
+Completed 256.0 KiB/572.4 KiB (4.8 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/572.4 KiB (9.2 MiB/s) with 1 file(s) remainingCompleted 572.4 KiB/572.4 KiB (6.0 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-234-211-27.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-234-211-27.log
+
+[31m[0m
+Stop instance
+i-0e4bd28c3239a6c93 is stopped now.
+partition 597 finished
+partition 633 finished
+partition 67 finished
+partition 705 finished
+partition 741 finished
+partition 778 finished
+partition 813 finished
+partition 85 finished
+partition 886 finished
+partition 921 finished
+partition 958 finished
+partition 994 finished
+128 164 20 236 272 308 344 380 416 452 489 524 560 597 633 67 705 741 778 813 85 886 921 958 994 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-35-170-53-254.log logs/illinois-temporal-postprocessing/ip-35-170-53-254.log
+Completed 256.0 KiB/576.2 KiB (6.1 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/576.2 KiB (10.6 MiB/s) with 1 file(s) remainingCompleted 576.2 KiB/576.2 KiB (5.8 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-35-170-53-254.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-35-170-53-254.log
+
+[31m[0m
+Stop instance
+i-0b868dde5d19a3365 is stopped now.
+partition 635 finished
+partition 671 finished
+partition 707 finished
+partition 743 finished
+partition 78 finished
+partition 815 finished
+partition 851 finished
+partition 888 finished
+partition 923 finished
+partition 96 finished
+partition 996 finished
+13 166 201 238 274 31 346 382 418 454 490 526 562 599 635 671 707 743 78 815 851 888 923 96 996 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-35-175-108-219.log logs/illinois-temporal-postprocessing/ip-35-175-108-219.log
+Completed 256.0 KiB/572.1 KiB (6.2 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/572.1 KiB (11.6 MiB/s) with 1 file(s) remainingCompleted 572.1 KiB/572.1 KiB (6.8 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-35-175-108-219.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-35-175-108-219.log
+
+[31m[0m
+Stop instance
+i-0e2a38f3752566899 is stopped now.
+partition 673 finished
+partition 709 finished
+partition 745 finished
+partition 781 finished
+partition 817 finished
+partition 853 finished
+partition 89 finished
+partition 925 finished
+partition 961 finished
+partition 998 finished
+131 168 203 24 276 311 348 384 42 456 492 528 564 60 637 673 709 745 781 817 853 89 925 961 998 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-54-157-114-224.log logs/illinois-temporal-postprocessing/ip-54-157-114-224.log
+Completed 256.0 KiB/576.1 KiB (3.0 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/576.1 KiB (5.7 MiB/s) with 1 file(s) remainingCompleted 576.1 KiB/576.1 KiB (3.3 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-54-157-114-224.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-54-157-114-224.log
+
+[31m[0m
+Stop instance
+i-0be88c1a373f56a38 is stopped now.
+partition 710 finished
+partition 747 finished
+partition 783 finished
+partition 819 finished
+partition 855 finished
+partition 891 finished
+partition 927 finished
+partition 963 finished
+133 17 205 241 278 313 35 386 421 458 494 53 566 601 639 675 710 747 783 819 855 891 927 963 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-54-83-248-94.log logs/illinois-temporal-postprocessing/ip-54-83-248-94.log
+Completed 256.0 KiB/554.4 KiB (5.3 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/554.4 KiB (9.4 MiB/s) with 1 file(s) remainingCompleted 554.4 KiB/554.4 KiB (7.6 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-54-83-248-94.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-54-83-248-94.log
+
+[31m[0m
+Stop instance
+i-00c7626f781864e02 is stopped now.
+Remaining instances: 29
+------------------------
+100.24.119.18
+100.25.246.181
+100.25.98.107
+100.26.5.5
+18.204.214.136
+18.204.247.183
+18.204.35.105
+18.206.86.66
+18.207.100.137
+18.207.102.147
+18.207.138.219
+18.208.203.123
+18.209.228.30
+18.210.7.186
+18.214.36.173
+18.215.33.18
+18.233.111.220
+18.234.139.84
+3.80.12.96
+34.200.234.160
+34.200.248.185
+34.201.6.44
+34.205.225.236
+34.231.225.13
+34.232.95.90
+34.237.223.60
+35.170.80.0
+52.54.70.190
+54.160.43.40
+partition 676 finished
+partition 711 finished
+partition 748 finished
+partition 784 finished
+partition 82 finished
+partition 856 finished
+partition 892 finished
+partition 928 finished
+partition 964 finished
+1 134 170 206 242 279 314 350 387 422 459 495 530 567 602 64 676 711 748 784 82 856 892 928 964 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-100-24-119-18.log logs/illinois-temporal-postprocessing/ip-100-24-119-18.log
+Completed 256.0 KiB/579.5 KiB (4.0 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/579.5 KiB (7.2 MiB/s) with 1 file(s) remainingCompleted 579.5 KiB/579.5 KiB (4.8 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-100-24-119-18.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-100-24-119-18.log
+
+[31m[0m
+Stop instance
+i-0aee7c557708b7f08 is stopped now.
+partition 75 finished
+partition 786 finished
+partition 821 finished
+partition 858 finished
+partition 894 finished
+partition 93 finished
+partition 966 finished
+100 136 172 208 244 280 316 352 389 424 460 497 532 569 604 641 678 713 75 786 821 858 894 93 966 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-100-25-98-107.log logs/illinois-temporal-postprocessing/ip-100-25-98-107.log
+Completed 256.0 KiB/577.7 KiB (6.0 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/577.7 KiB (10.7 MiB/s) with 1 file(s) remainingCompleted 577.7 KiB/577.7 KiB (5.8 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-100-25-98-107.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-100-25-98-107.log
+
+[31m[0m
+Stop instance
+i-0708620d168711cd9 is stopped now.
+partition 751 finished
+partition 788 finished
+partition 823 finished
+partition 86 finished
+partition 896 finished
+partition 931 finished
+partition 968 finished
+101 138 174 21 246 282 318 354 390 426 462 499 534 570 606 643 68 715 751 788 823 86 896 931 968 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-204-214-136.log logs/illinois-temporal-postprocessing/ip-18-204-214-136.log
+Completed 256.0 KiB/577.8 KiB (5.4 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/577.8 KiB (9.7 MiB/s) with 1 file(s) remainingCompleted 577.8 KiB/577.8 KiB (5.3 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-204-214-136.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-204-214-136.log
+
+[31m[0m
+Stop instance
+i-02665f8b488e2fb9e is stopped now.
+partition 79 finished
+partition 825 finished
+partition 861 finished
+partition 898 finished
+partition 933 finished
+partition 97 finished
+103 14 176 211 248 284 32 356 392 428 464 50 536 572 608 645 681 717 753 79 825 861 898 933 97 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-204-35-105.log logs/illinois-temporal-postprocessing/ip-18-204-35-105.log
+Completed 256.0 KiB/579.8 KiB (4.1 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/579.8 KiB (7.7 MiB/s) with 1 file(s) remainingCompleted 579.8 KiB/579.8 KiB (4.7 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-204-35-105.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-204-35-105.log
+
+[31m[0m
+Stop instance
+i-0b3cf3fa3f73383ea is stopped now.
+partition 827 finished
+partition 863 finished
+partition 9 finished
+partition 935 finished
+partition 971 finished
+105 141 178 213 25 286 321 358 394 43 466 501 538 574 610 647 683 719 755 791 827 863 9 935 971 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-207-100-137.log logs/illinois-temporal-postprocessing/ip-18-207-100-137.log
+Completed 256.0 KiB/572.1 KiB (5.5 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/572.1 KiB (9.9 MiB/s) with 1 file(s) remainingCompleted 572.1 KiB/572.1 KiB (6.2 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-207-100-137.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-207-100-137.log
+
+[31m[0m
+Stop instance
+i-0650230e82574e381 is stopped now.
+partition 865 finished
+partition 900 finished
+partition 937 finished
+partition 973 finished
+107 143 18 215 251 288 323 36 396 431 468 503 54 576 612 649 685 720 757 793 829 865 900 937 973 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-207-138-219.log logs/illinois-temporal-postprocessing/ip-18-207-138-219.log
+Completed 256.0 KiB/574.2 KiB (5.7 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/574.2 KiB (10.5 MiB/s) with 1 file(s) remainingCompleted 574.2 KiB/574.2 KiB (4.9 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-18-207-138-219.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-207-138-219.log
+
+[31m[0m
+Stop instance
+i-0a0854dd7977a4b12 is stopped now.
+partition 902 finished
+partition 939 finished
+partition 975 finished
+109 145 181 217 253 29 325 361 398 433 47 505 541 578 614 650 687 722 759 795 830 867 902 939 975 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-209-228-30.log logs/illinois-temporal-postprocessing/ip-18-209-228-30.log
+Completed 256.0 KiB/574.6 KiB (5.6 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/574.6 KiB (10.2 MiB/s) with 1 file(s) remainingCompleted 574.6 KiB/574.6 KiB (6.1 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-18-209-228-30.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-209-228-30.log
+
+[31m[0m
+Stop instance
+i-0dac238ceacf8f79d is stopped now.
+partition 940 finished
+partition 977 finished
+110 147 183 219 255 291 327 363 4 435 471 507 543 58 616 652 689 724 760 797 832 869 904 940 977 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-214-36-173.log logs/illinois-temporal-postprocessing/ip-18-214-36-173.log
+Completed 256.0 KiB/571.9 KiB (5.9 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/571.9 KiB (10.6 MiB/s) with 1 file(s) remainingCompleted 571.9 KiB/571.9 KiB (6.1 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-18-214-36-173.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-214-36-173.log
+
+[31m[0m
+Stop instance
+i-0dad36b6cb7850b80 is stopped now.
+partition 979 finished
+112 149 185 220 257 293 329 365 400 437 473 509 545 581 618 654 690 726 762 799 834 870 906 942 979 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-233-111-220.log logs/illinois-temporal-postprocessing/ip-18-233-111-220.log
+Completed 256.0 KiB/567.6 KiB (4.1 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/567.6 KiB (7.5 MiB/s) with 1 file(s) remainingCompleted 567.6 KiB/567.6 KiB (4.8 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-233-111-220.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-233-111-220.log
+
+[31m[0m
+Stop instance
+i-05e5f5e6b004e0a26 is stopped now.
+partition 980 finished
+114 150 187 222 259 295 330 367 402 439 475 510 547 583 62 656 692 728 764 80 836 872 908 944 980 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-3-80-12-96.log logs/illinois-temporal-postprocessing/ip-3-80-12-96.log
+Completed 256.0 KiB/575.4 KiB (6.8 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/575.4 KiB (12.9 MiB/s) with 1 file(s) remainingCompleted 575.4 KiB/575.4 KiB (5.4 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-3-80-12-96.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-3-80-12-96.log
+
+[31m[0m
+Stop instance
+i-05a4999e97ecf4086 is stopped now.
+partition 442 finished
+partition 479 finished
+partition 514 finished
+partition 550 finished
+partition 587 finished
+partition 623 finished
+partition 66 finished
+partition 696 finished
+partition 731 finished
+partition 768 finished
+partition 803 finished
+partition 84 finished
+partition 876 finished
+partition 911 finished
+partition 948 finished
+partition 984 finished
+118 154 190 226 262 299 334 370 406 442 479 514 550 587 623 66 696 731 768 803 84 876 911 948 984 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-200-248-185.log logs/illinois-temporal-postprocessing/ip-34-200-248-185.log
+Completed 256.0 KiB/580.3 KiB (5.4 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/580.3 KiB (9.5 MiB/s) with 1 file(s) remainingCompleted 580.3 KiB/580.3 KiB (7.8 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-200-248-185.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-200-248-185.log
+
+[31m[0m
+Stop instance
+i-0368fab8c5abaec38 is stopped now.
+partition 482 finished
+partition 518 finished
+partition 554 finished
+partition 590 finished
+partition 627 finished
+partition 663 finished
+partition 7 finished
+partition 735 finished
+partition 771 finished
+partition 807 finished
+partition 843 finished
+partition 88 finished
+partition 915 finished
+partition 951 finished
+partition 988 finished
+121 158 194 23 266 301 338 374 41 446 482 518 554 590 627 663 7 735 771 807 843 88 915 951 988 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-205-225-236.log logs/illinois-temporal-postprocessing/ip-34-205-225-236.log
+Completed 256.0 KiB/574.2 KiB (6.4 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/574.2 KiB (12.0 MiB/s) with 1 file(s) remainingCompleted 574.2 KiB/574.2 KiB (6.6 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-34-205-225-236.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-205-225-236.log
+
+[31m[0m
+Stop instance
+i-03b4191672c754cdd is stopped now.
+partition 558 finished
+partition 594 finished
+partition 630 finished
+partition 667 finished
+partition 702 finished
+partition 739 finished
+partition 775 finished
+partition 810 finished
+partition 847 finished
+partition 883 finished
+partition 919 finished
+partition 955 finished
+partition 991 finished
+125 161 198 233 27 305 341 378 413 45 486 521 558 594 630 667 702 739 775 810 847 883 919 955 991 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-232-95-90.log logs/illinois-temporal-postprocessing/ip-34-232-95-90.log
+Completed 256.0 KiB/567.7 KiB (1.6 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/567.7 KiB (3.1 MiB/s) with 1 file(s) remainingCompleted 567.7 KiB/567.7 KiB (2.8 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-232-95-90.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-232-95-90.log
+
+[31m[0m
+Stop instance
+i-018a6d9f132c4e593 is stopped now.
+partition 634 finished
+partition 670 finished
+partition 706 finished
+partition 742 finished
+partition 779 finished
+partition 814 finished
+partition 850 finished
+partition 887 finished
+partition 922 finished
+partition 959 finished
+partition 995 finished
+129 165 200 237 273 309 345 381 417 453 49 525 561 598 634 670 706 742 779 814 850 887 922 959 995 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-35-170-80-0.log logs/illinois-temporal-postprocessing/ip-35-170-80-0.log
+Completed 256.0 KiB/571.3 KiB (5.5 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/571.3 KiB (9.8 MiB/s) with 1 file(s) remainingCompleted 571.3 KiB/571.3 KiB (6.1 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-35-170-80-0.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-35-170-80-0.log
+
+[31m[0m
+Stop instance
+i-076aca9af54231f5b is stopped now.
+partition 71 finished
+partition 746 finished
+partition 782 finished
+partition 818 finished
+partition 854 finished
+partition 890 finished
+partition 926 finished
+partition 962 finished
+partition 999 finished
+132 169 204 240 277 312 349 385 420 457 493 529 565 600 638 674 71 746 782 818 854 890 926 962 999 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-54-160-43-40.log logs/illinois-temporal-postprocessing/ip-54-160-43-40.log
+Completed 256.0 KiB/576.7 KiB (5.2 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/576.7 KiB (9.2 MiB/s) with 1 file(s) remainingCompleted 576.7 KiB/576.7 KiB (5.0 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-54-160-43-40.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-54-160-43-40.log
+
+[31m[0m
+Stop instance
+i-0235612b69e9994c3 is stopped now.
+Remaining instances: 14
+------------------------
+100.25.246.181
+100.26.5.5
+18.204.247.183
+18.206.86.66
+18.207.102.147
+18.208.203.123
+18.210.7.186
+18.215.33.18
+18.234.139.84
+34.200.234.160
+34.201.6.44
+34.231.225.13
+34.237.223.60
+52.54.70.190
+partition 712 finished
+partition 749 finished
+partition 785 finished
+partition 820 finished
+partition 857 finished
+partition 893 finished
+partition 929 finished
+partition 965 finished
+10 135 171 207 243 28 315 351 388 423 46 496 531 568 603 640 677 712 749 785 820 857 893 929 965 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-100-25-246-181.log logs/illinois-temporal-postprocessing/ip-100-25-246-181.log
+Completed 256.0 KiB/573.9 KiB (4.7 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/573.9 KiB (8.9 MiB/s) with 1 file(s) remainingCompleted 573.9 KiB/573.9 KiB (7.4 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-100-25-246-181.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-100-25-246-181.log
+
+[31m[0m
+Stop instance
+i-027b7c6427f97ced0 is stopped now.
+partition 789 finished
+partition 824 finished
+partition 860 finished
+partition 897 finished
+partition 932 finished
+partition 969 finished
+102 139 175 210 247 283 319 355 391 427 463 5 535 571 607 644 680 716 752 789 824 860 897 932 969 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-204-247-183.log logs/illinois-temporal-postprocessing/ip-18-204-247-183.log
+Completed 256.0 KiB/574.3 KiB (5.2 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/574.3 KiB (9.2 MiB/s) with 1 file(s) remainingCompleted 574.3 KiB/574.3 KiB (5.5 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-204-247-183.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-204-247-183.log
+
+[31m[0m
+Stop instance
+i-02d572ab302474155 is stopped now.
+partition 864 finished
+partition 90 finished
+partition 936 finished
+partition 972 finished
+106 142 179 214 250 287 322 359 395 430 467 502 539 575 611 648 684 72 756 792 828 864 90 936 972 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-207-102-147.log logs/illinois-temporal-postprocessing/ip-18-207-102-147.log
+Completed 256.0 KiB/577.5 KiB (4.4 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/577.5 KiB (8.1 MiB/s) with 1 file(s) remainingCompleted 577.5 KiB/577.5 KiB (2.9 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-207-102-147.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-207-102-147.log
+
+[31m[0m
+Stop instance
+i-0aa3fdf0311411c77 is stopped now.
+partition 903 finished
+partition 94 finished
+partition 976 finished
+11 146 182 218 254 290 326 362 399 434 470 506 542 579 615 651 688 723 76 796 831 868 903 94 976 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-210-7-186.log logs/illinois-temporal-postprocessing/ip-18-210-7-186.log
+Completed 256.0 KiB/580.7 KiB (5.3 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/580.7 KiB (9.7 MiB/s) with 1 file(s) remainingCompleted 580.7 KiB/580.7 KiB (5.4 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-210-7-186.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-210-7-186.log
+
+[31m[0m
+Stop instance
+i-08ad44c0d48c67b77 is stopped now.
+partition 98 finished
+113 15 186 221 258 294 33 366 401 438 474 51 546 582 619 655 691 727 763 8 835 871 907 943 98 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-234-139-84.log logs/illinois-temporal-postprocessing/ip-18-234-139-84.log
+Completed 256.0 KiB/573.1 KiB (6.5 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/573.1 KiB (12.0 MiB/s) with 1 file(s) remainingCompleted 573.1 KiB/573.1 KiB (5.8 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-18-234-139-84.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-234-139-84.log
+
+[31m[0m
+Stop instance
+i-08e1b10478396db56 is stopped now.
+partition 444 finished
+partition 480 finished
+partition 516 finished
+partition 552 finished
+partition 589 finished
+partition 625 finished
+partition 661 finished
+partition 698 finished
+partition 733 finished
+partition 77 finished
+partition 805 finished
+partition 841 finished
+partition 878 finished
+partition 913 finished
+partition 95 finished
+partition 986 finished
+12 156 192 228 264 30 336 372 408 444 480 516 552 589 625 661 698 733 77 805 841 878 913 95 986 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-201-6-44.log logs/illinois-temporal-postprocessing/ip-34-201-6-44.log
+Completed 256.0 KiB/575.3 KiB (5.3 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/575.3 KiB (9.3 MiB/s) with 1 file(s) remainingCompleted 575.3 KiB/575.3 KiB (7.6 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-201-6-44.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-201-6-44.log
+
+[31m[0m
+Stop instance
+i-0096bb8865ba20cb3 is stopped now.
+partition 596 finished
+partition 632 finished
+partition 669 finished
+partition 704 finished
+partition 740 finished
+partition 777 finished
+partition 812 finished
+partition 849 finished
+partition 885 finished
+partition 920 finished
+partition 957 finished
+partition 993 finished
+127 163 2 235 271 307 343 38 415 451 488 523 56 596 632 669 704 740 777 812 849 885 920 957 993 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-237-223-60.log logs/illinois-temporal-postprocessing/ip-34-237-223-60.log
+Completed 256.0 KiB/578.6 KiB (5.0 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/578.6 KiB (8.8 MiB/s) with 1 file(s) remainingCompleted 578.6 KiB/578.6 KiB (4.9 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-237-223-60.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-237-223-60.log
+
+[31m[0m
+Stop instance
+i-003a2fcc29b1371fc is stopped now.
+Remaining instances: 7
+------------------------
+100.26.5.5
+18.206.86.66
+18.208.203.123
+18.215.33.18
+34.200.234.160
+34.231.225.13
+52.54.70.190
+partition 750 finished
+partition 787 finished
+partition 822 finished
+partition 859 finished
+partition 895 finished
+partition 930 finished
+partition 967 finished
+1000 137 173 209 245 281 317 353 39 425 461 498 533 57 605 642 679 714 750 787 822 859 895 930 967 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-100-26-5-5.log logs/illinois-temporal-postprocessing/ip-100-26-5-5.log
+Completed 256.0 KiB/570.7 KiB (5.4 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/570.7 KiB (9.5 MiB/s) with 1 file(s) remainingCompleted 570.7 KiB/570.7 KiB (4.9 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-100-26-5-5.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-100-26-5-5.log
+
+[31m[0m
+Stop instance
+i-04968a60db2e74a7a is stopped now.
+partition 901 finished
+partition 938 finished
+partition 974 finished
+108 144 180 216 252 289 324 360 397 432 469 504 540 577 613 65 686 721 758 794 83 866 901 938 974 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-208-203-123.log logs/illinois-temporal-postprocessing/ip-18-208-203-123.log
+Completed 256.0 KiB/573.5 KiB (5.0 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/573.5 KiB (9.2 MiB/s) with 1 file(s) remainingCompleted 573.5 KiB/573.5 KiB (6.4 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-18-208-203-123.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-208-203-123.log
+
+[31m[0m
+Stop instance
+i-0710682aff5e1c754 is stopped now.
+partition 404 finished
+partition 440 finished
+partition 477 finished
+partition 512 finished
+partition 549 finished
+partition 585 finished
+partition 621 finished
+partition 658 finished
+partition 694 finished
+partition 73 finished
+partition 766 finished
+partition 801 finished
+partition 838 finished
+partition 874 finished
+partition 91 finished
+partition 946 finished
+partition 982 finished
+116 152 189 224 260 297 332 369 404 440 477 512 549 585 621 658 694 73 766 801 838 874 91 946 982 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-200-234-160.log logs/illinois-temporal-postprocessing/ip-34-200-234-160.log
+Completed 256.0 KiB/580.5 KiB (6.1 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/580.5 KiB (11.3 MiB/s) with 1 file(s) remainingCompleted 580.5 KiB/580.5 KiB (6.1 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-34-200-234-160.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-200-234-160.log
+
+[31m[0m
+Stop instance
+i-09368affe23c81c65 is stopped now.
+partition 672 finished
+partition 708 finished
+partition 744 finished
+partition 780 finished
+partition 816 finished
+partition 852 finished
+partition 889 finished
+partition 924 finished
+partition 960 finished
+partition 997 finished
+130 167 202 239 275 310 347 383 419 455 491 527 563 6 636 672 708 744 780 816 852 889 924 960 997 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-52-54-70-190.log logs/illinois-temporal-postprocessing/ip-52-54-70-190.log
+Completed 256.0 KiB/580.9 KiB (5.8 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/580.9 KiB (10.2 MiB/s) with 1 file(s) remainingCompleted 580.9 KiB/580.9 KiB (5.5 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-52-54-70-190.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-52-54-70-190.log
+
+[31m[0m
+Stop instance
+i-0236a1d59afa6fbc2 is stopped now.
+Remaining instances: 3
+------------------------
+18.206.86.66
+18.215.33.18
+34.231.225.13
+partition 826 finished
+partition 862 finished
+partition 899 finished
+partition 934 finished
+partition 970 finished
+104 140 177 212 249 285 320 357 393 429 465 500 537 573 609 646 682 718 754 790 826 862 899 934 970 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-206-86-66.log logs/illinois-temporal-postprocessing/ip-18-206-86-66.log
+Completed 256.0 KiB/575.1 KiB (6.5 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/575.1 KiB (11.6 MiB/s) with 1 file(s) remainingCompleted 575.1 KiB/575.1 KiB (6.2 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-18-206-86-66.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-206-86-66.log
+
+[31m[0m
+Stop instance
+i-01fee5ae6d751934e is stopped now.
+partition 52 finished
+partition 556 finished
+partition 592 finished
+partition 629 finished
+partition 665 finished
+partition 700 finished
+partition 737 finished
+partition 773 finished
+partition 809 finished
+partition 845 finished
+partition 881 finished
+partition 917 finished
+partition 953 finished
+partition 99 finished
+123 16 196 231 268 303 34 376 411 448 484 52 556 592 629 665 700 737 773 809 845 881 917 953 99 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-34-231-225-13.log logs/illinois-temporal-postprocessing/ip-34-231-225-13.log
+Completed 256.0 KiB/575.8 KiB (2.3 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/575.8 KiB (4.4 MiB/s) with 1 file(s) remainingCompleted 575.8 KiB/575.8 KiB (3.4 MiB/s) with 1 file(s) remainingupload: log/illinois-temporal/ip-34-231-225-13.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-34-231-225-13.log
+
+[31m[0m
+Stop instance
+i-088a9e0795a917d7e is stopped now.
+Remaining instances: 1
+------------------------
+18.215.33.18
+partition 941 finished
+partition 978 finished
+111 148 184 22 256 292 328 364 40 436 472 508 544 580 617 653 69 725 761 798 833 87 905 941 978 finished
+Copy cmd log to s3
+Run command:source ~/.customrc; cptos3.sh ~/log/illinois-temporal/ip-18-215-33-18.log logs/illinois-temporal-postprocessing/ip-18-215-33-18.log
+Completed 256.0 KiB/574.8 KiB (5.7 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/574.8 KiB (10.9 MiB/s) with 1 file(s) remainingCompleted 574.8 KiB/574.8 KiB (4.0 MiB/s) with 1 file(s) remaining upload: log/illinois-temporal/ip-18-215-33-18.log to s3://cogcomp-public-data/logs/illinois-temporal-postprocessing/ip-18-215-33-18.log
+
+[31m[0m
+Stop instance
+i-02d5dfe8934df9881 is stopped now.

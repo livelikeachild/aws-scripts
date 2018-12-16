@@ -11,12 +11,12 @@ def list_unfinished_partitions():
     unfinished = []
     s3 = boto3.resource('s3')
     bucket = s3.Bucket('cogcomp-public-data')
-    results = list(bucket.objects.filter(Prefix='results/illinois-temporal'))
-    results = [r.key.replace('results/illinois-temporal/','') for r in results if r.key.endswith('.tgz')]
-    processed = list(bucket.objects.filter(Prefix='processed/nyt-annotated-zipped-jsons'))
-    processed = [int(p.key.replace('processed/nyt-annotated-zipped-jsons/','').replace('.zip','')) for p in processed if p.key.endswith(".zip")]
+    results = list(bucket.objects.filter(Prefix='results/illinois-temporal-postprocessing'))
+    results = [r.key.replace('results/illinois-temporal-postprocessing/','') for r in results]
+    processed = list(bucket.objects.filter(Prefix='results/illinois-temporal'))
+    processed = [int(p.key.replace('results/illinois-temporal/','').replace('.ser.tgz','')) for p in processed if p.key.endswith(".ser.tgz")]
     for p in processed:
-        if ('%d.ser.tgz' % p) in results and ('%d.timeline.tgz' % p) in results:
+        if ('%d.temprel.tgz' % p) in results and ('%d.stats' % p) in results:
             continue
         unfinished.append(p)
     return unfinished

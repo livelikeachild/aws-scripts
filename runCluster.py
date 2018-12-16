@@ -17,7 +17,7 @@ def partitionsFinished(partitions,cache):
         if p in cache:
             continue
         
-        if not fileExistsS3('results/illinois-temporal/%d.ser.tgz'%p) or not fileExistsS3('results/illinois-temporal/%d.timeline.tgz'%p):
+        if not fileExistsS3('results/illinois-temporal-postprocessing/%d.temprel.tgz'%p) or not fileExistsS3('results/illinois-temporal-postprocessing/%d.stats'%p):
             print "partition %d unfinished" % p
             allFinished = False
             break
@@ -27,7 +27,7 @@ def partitionsFinished(partitions,cache):
     return allFinished
 def cplog2s3(ip):
     log_name = 'ip-%s.log' % ip.replace('.','-')
-    command = "source ~/.customrc; cptos3.sh ~/log/illinois-temporal/%s logs/illinois-temporal/%s" % (log_name,log_name)
+    command = "source ~/.customrc; cptos3.sh ~/log/illinois-temporal/%s logs/illinois-temporal-postprocessing/%s" % (log_name,log_name)
     run_command(host,inline=True,verbose=True,command=command)
     time.sleep(10)
 def stopInstanceByIp(ip, dryrun=True):
@@ -52,7 +52,7 @@ def splitPartitions(partitions, n):
     ret = [str(x).replace(',','').replace('[','').replace(']','') for x in ret]
     return ret
 
-n = 140
+n = 40
 print "#Instances requested: %d" % n
 partitions = list_unfinished_partitions()
 print "#Partitions unfinished: %d" % len(partitions)
@@ -61,7 +61,7 @@ print "#Partitions to process: %d" % len(partitions)
 partitions = splitPartitions(partitions,n)
 print "#Partitions equally assigned to %d instances" % n
 
-tag = 'TimelineLarge2'
+tag = 'POSTPROCESSING2'
 forceUpdate = 'false'
 MAX_NUM_EVENT = '100'
 print "---------------------------"
@@ -86,7 +86,7 @@ for i,host in enumerate(ips):
     run_command(host,command_modified,inline=True,verbose=False)
 
 for key,value in par2host.iteritems():
-    print key +"==>"+host
+    print key +"==>"+value
 
 partitions_remaining = partitions
 cache = set()
