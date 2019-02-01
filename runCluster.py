@@ -8,38 +8,109 @@ import time
 from s3_util import *
 from ec2 import *
 from spot_instance import *
+import sys
 
-def partitionsFinished(partitions,cache):
-    partitions = partitions.split()
-    partitions = [int(x) for x in partitions]
-    allFinished = True
-    for p in partitions:
-        if p in cache:
-            continue
-        
-        if not fileExistsS3('results/illinois-temporal-postprocessing/%d.temprel.tgz'%p) or not fileExistsS3('results/illinois-temporal-postprocessing/%d.stats'%p):
-            print "partition %d unfinished" % p
-            allFinished = False
-            break
-        else:
-            print "partition %d finished" %p
-            cache.add(p)
-    return allFinished
-def cplog2s3(ip):
-    log_name = 'ip-%s.log' % ip.replace('.','-')
-    command = "source ~/.customrc; cptos3.sh ~/log/illinois-temporal/%s logs/illinois-temporal-postprocessing/%s" % (log_name,log_name)
-    run_command(host,inline=True,verbose=True,command=command)
-    time.sleep(10)
-def stopInstanceByIp(ip, dryrun=True):
-    conn=boto.ec2.connect_to_region('us-east-1')
-    reservations=conn.get_all_instances()
-    instances=[i for r in reservations for i in r.instances]
-    for ins in instances:
-        if ins.ip_address == ip:
-            print ins.id+" is stopped now."
-            if dryrun:
+class partition_monitor:
+    def __init__(self,par_input_s3_dir,par_output_s3_dir,par_input_suffix,par_output_suffix,verbose=True):
+        # dir should end with "/"
+        # suffix doesn't come with a leading "."
+        self.par_input_s3_dir = par_input_s3_dir
+        self.par_output_s3_dir = par_output_s3_dir
+        if not self.par_input_s3_dir.endswith("/"):
+            self.par_input_s3_dir += "/"
+        if not self.par_output_s3_dir.endswith("/"):
+            self.par_output_s3_dir += "/"
+
+        self.par_input_suffix = par_input_suffix # single suffix
+        self.par_output_suffix = par_output_suffix # mulitple suffixes as a list
+
+        bucket = boto3.resource('s3').Bucket('cogcomp-public-data')
+        input_all = list(bucket.objects.filter(Prefix=self.par_input_s3_dir))
+        self.par_all = [int(p.key.replace(self.par_input_s3_dir,'').replace("."+self.par_input_suffix,'')) for p in input_all if p.key.endswith("."+self.par_input_suffix)]
+
+        self.par_finished = set()
+        self.par_unfinished = set()
+        for p in self.par_all[:20]:
+            if verbose:
+                print "Checking partition %d" % p
+            if self.isPartitionFinished(p):
+                self.par_finished.add(p)
+                if verbose:
+                    print "already finished."
+            else:
+                self.par_unfinished.add(p)
+                if verbose:
+                    print "Not finished."
+
+    def isPartitionFinished(self,par):
+        if par in self.par_finished:
+            return True
+        for suffix in self.par_output_suffix:
+            if not fileExistsS3("%s%d.%s" %(self.par_output_s3_dir,par,suffix)):
+                return False
+        self.par_finished.add(par)
+        if par in self.par_unfinished:
+            self.par_unfinished.remove(par)
+        return True
+
+    def arePartitionsFinished(self,partitions):
+        # partitions should be a list of integers
+
+        # partitions = "1 2 3", i.e., strings separated by spaces
+        # partitions = partitions.split()
+        # partitions = [int(x) for x in partitions]
+        allFinished = True
+        for p in partitions:
+            if p in self.par_finished:
                 continue
-            boto.connect_ec2().terminate_instances(ins.id)
+            if not self.isPartitionFinished(p):
+                print "partition %d unfinished" % p
+                allFinished = False
+                break
+            else:
+                print "partition %d finished" % p
+        return allFinished
+
+# def isPartitionFinished(par):
+#     return fileExistsS3('results/illinois-temporal-postprocessing/%d.temprel.tgz'%par) and fileExistsS3('results/illinois-temporal-postprocessing/%d.stats'%par)
+
+# def partitionsFinished(partitions,cache):
+#     partitions = partitions.split()
+#     partitions = [int(x) for x in partitions]
+#     allFinished = True
+#     for p in partitions:
+#         if p in cache:
+#             continue
+#         if not isPartitionFinished(p):
+#             print "partition %d unfinished" % p
+#             allFinished = False
+#             break
+#         else:
+#             print "partition %d finished" %p
+#             cache.add(p)
+#     return allFinished
+
+# def list_unfinished_partitions():
+#     unfinished = []
+#     s3 = boto3.resource('s3')
+#     bucket = s3.Bucket('cogcomp-public-data')
+#     results = list(bucket.objects.filter(Prefix='results/illinois-temporal-postprocessing'))
+#     results = [r.key.replace('results/illinois-temporal-postprocessing/','') for r in results]
+#     processed = list(bucket.objects.filter(Prefix='results/illinois-temporal'))
+#     processed = [int(p.key.replace('results/illinois-temporal/','').replace('.ser.tgz','')) for p in processed if p.key.endswith(".ser.tgz")]
+#     for p in processed:
+#         if ('%d.temprel.tgz' % p) in results and ('%d.stats' % p) in results:
+#             continue
+#         unfinished.append(p)
+#     return unfinished
+
+
+def cplog2s3(ip,s3logdir):
+    log_name = 'ip-%s.log' % ip.replace('.','-')
+    command = "source ~/.customrc; cptos3.sh ~/log/%s %s/%s" % (log_name,s3logdir,log_name)
+    run_command(ip,inline=True,verbose=True,command=command)
+    time.sleep(10)
+
 def splitPartitions(partitions, n):
     # split partitions into n pieces
     ret = [[]]*n
@@ -52,64 +123,95 @@ def splitPartitions(partitions, n):
     ret = [str(x).replace(',','').replace('[','').replace(']','') for x in ret]
     return ret
 
-n = 40
-print "#Instances requested: %d" % n
-partitions = list_unfinished_partitions()
-print "#Partitions unfinished: %d" % len(partitions)
-partitions = [x for x in partitions]
-print "#Partitions to process: %d" % len(partitions)
-partitions = splitPartitions(partitions,n)
-print "#Partitions equally assigned to %d instances" % n
+@click.command()
+@click.option("--count",default=1) # number of instances to claim
+@click.option("--tag",default="defaultTag") # used by AWS instances
+@click.option("--image_id",default="ami-0322f63e84fa693f6")
+@click.option("--price",default="0.03")
+@click.option("--type",default="one-time")
+@click.option("--key_name",default="g0202243")
+@click.option("--instance_type",default="t2.large")
+@click.option("--security_group_ids",default="sg-47e5fa36")
+@click.option("--init_script_path",default="./init_script.sh") # must have no input args
+@click.option("--main_script_path",default="./scripts/runIllinoisTemporal.sh") # the 1st arg must be partition numbers; the other args are free and are provided by --main_script_args
+@click.option("--main_script_args",default="")
+@click.option("--input_s3_dir",default="")
+@click.option("--output_s3_dir",default="")
+@click.option("--input_suffix",default="")
+@click.option("--output_suffix",default="")
+@click.option("--s3logdir",default="logs")
+@click.option("--update_interval",default=60) # check every 60 seconds to close those instances that have finished
+@click.option("--debug",is_flag=True)
+def run(count,tag,image_id,price,type,key_name,instance_type,security_group_ids,init_script_path,main_script_path,main_script_args,input_s3_dir,output_s3_dir,input_suffix,output_suffix,s3logdir,update_interval,debug):
+    # myMonitor = partition_monitor('results/illinois-temporal','results/illinois-temporal-postprocessing','ser.tgz',['temprel.tgz','stats'])
+    myMonitor = partition_monitor(input_s3_dir, output_s3_dir, input_suffix,
+                                  output_suffix.split())
 
-tag = 'POSTPROCESSING2'
-forceUpdate = 'false'
-MAX_NUM_EVENT = '100'
-print "---------------------------"
-print "Tag: %s\nforce update: %s\nMAX_NUM_EVENT: %s" %(tag,forceUpdate,MAX_NUM_EVENT)
+    print "#Instances requested: %d" % count
+    partitions = myMonitor.par_unfinished
+    print "#Partitions unfinished: %d" % len(partitions)
+    partitions = [x for x in partitions]
+    print "#Partitions to process: %d" % len(partitions)
+    partitions = splitPartitions(partitions, count)
+    print "#Partitions equally assigned to %d instances" % count
 
-new_reservation = request_spot_instances(count=n,tag=tag)
-tmp = 180
-print "Wait for %.2f mins" % (1.0*tmp/60)
-time.sleep(tmp)
-run_command_all_instances(tag=tag,inline=False,target='./init_script.sh')
-time.sleep(30)
+    print "---------------------------"
+    print "Tag: %s\nInput arguments: %s" % (tag, main_script_args)
+    if debug:
+        return
+    new_reservation = request_spot_instances(count=count, tag=tag,IMAGE_ID=image_id,price=price,type=type,key_name=key_name,instance_type=instance_type,security_group_ids=security_group_ids)
+    tmp = 180
+    print "Wait for %.2f mins to get all spot instances ready" % (1.0 * tmp / 60)
+    time.sleep(tmp)
+    run_command_all_instances(tag=tag, inline=False, target=init_script_path)
+    print
+    time.sleep(30)
+    sys.stdout.flush()
 
-ips=get_all_instances(tag)
-ips.sort()
-command = "./scripts/runIllinoisTemporal.sh "
-par2host = {}
-for i,host in enumerate(ips):
-    print "--------------------"
-    print "%d - Executing scripts on %s" %(i,host)
-    par2host[partitions[i]] = host
-    command_modified = command+"\"%s\" %s %s >> ~/log/illinois-temporal/ip-%s.log &" % (partitions[i], forceUpdate, MAX_NUM_EVENT, host.replace('.','-'))
-    run_command(host,command_modified,inline=True,verbose=False)
+    ips = get_all_instances(tag)
+    ips.sort()
+    command = main_script_path+" "
+    par2host = {}
+    for i, host in enumerate(ips):
+        print "--------------------"
+        print "%d - Executing scripts on %s" % (i, host)
+        par2host[partitions[i]] = host
+        # command_modified = command + "\"%s\" %s %s >> ~/log/illinois-temporal/ip-%s.log &" % (
+        # partitions[i], forceUpdate, MAX_NUM_EVENT, host.replace('.', '-'))
+        command_modified = command + "\"%s\" " % partitions[i]
+        command_modified += "%s " % main_script_args
+        command_modified += ">> ~/log/ip-%s.log &" % host.replace('.', '-') # log of the main_script
+        run_command(host, command_modified, inline=True, verbose=False)
 
-for key,value in par2host.iteritems():
-    print key +"==>"+value
+    for key, value in par2host.iteritems():
+        print key + "==>" + value
+    sys.stdout.flush()
 
-partitions_remaining = partitions
-cache = set()
-while 1:
-    for p_str in partitions_remaining:
-        if partitionsFinished(p_str,cache):
-            print "%s finished" % p_str
-            print "Copy cmd log to s3"
-            partitions.remove(p_str)
-            host = par2host[p_str]
-            cplog2s3(host)
-            print "Stop instance"
-            stopInstanceByIp(host,dryrun=False)
-        else:
-            tmp = 60
-            print "Wait for %.2f min" % (1.0*tmp/60)
-            time.sleep(tmp)
-            #time.sleep(5)
-    if len(partitions)==0:
-        break
     partitions_remaining = partitions
-    print "Remaining instances: %d" % len(partitions_remaining)
-    print "------------------------"
-    for p_str in partitions_remaining:
-        print par2host[p_str]
+    while 1:
+        for p_str in partitions_remaining:
+            p = p_str.split()
+            p = [int(x) for x in p]
+            if myMonitor.arePartitionsFinished(p):
+                print "%s finished" % p_str
+                print "Copy cmd log to s3"
+                partitions.remove(p_str)
+                host = par2host[p_str]
+                cplog2s3(host,s3logdir)
+                print "Stop instance"
+                stopInstanceByIp(host, dryrun=False)
+            else:
+                tmp = update_interval
+                print "Wait for %.2f min" % (1.0 * tmp / 60)
+                time.sleep(tmp)
+                # time.sleep(5)
+        if len(partitions) == 0:
+            break
+        partitions_remaining = partitions
+        print "Remaining instances: %d" % len(partitions_remaining)
+        print "------------------------"
+        for p_str in partitions_remaining:
+            print par2host[p_str]
 
+if __name__ == "__main__":
+    run()

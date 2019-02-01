@@ -11,17 +11,16 @@ def all_have_ip(conn, ids):
 def get_all_id(conn, ids):
     spots = conn.get_all_spot_instance_requests(request_ids=ids)
     return [spot.instance_id for spot in spots]
-def request_spot_instances(count=1,tag='TimeLine'):
+def request_spot_instances(count=1,tag='defaultTag',IMAGE_ID="ami-0322f63e84fa693f6",price="0.03",type="one-time",key_name="g0202243",instance_type="t2.large",security_group_ids='sg-47e5fa36'):
     conn = boto.ec2.connect_to_region('us-east-1')
-    IMAGE_ID = "ami-0322f63e84fa693f6"
     new_reservation = conn.request_spot_instances(
-        price="0.03",
+        price=price,
         image_id=IMAGE_ID,
         count=count,
-        type="one-time",
-        key_name='g0202243',
-        instance_type='t2.large',
-        security_group_ids=['sg-47e5fa36'])
+        type=type,
+        key_name=key_name,
+        instance_type=instance_type,
+        security_group_ids=[security_group_ids])
     time.sleep(5)
     spot_ids = [x.id for x in new_reservation]
     while 1:
