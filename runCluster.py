@@ -105,10 +105,10 @@ class partition_monitor:
 #     return unfinished
 
 
-def cplog2s3(ip,s3logdir):
+def cplog2s3(ip,s3logdir,private_key_file):
     log_name = 'ip-%s.log' % ip.replace('.','-')
     command = "source ~/.customrc; cptos3.sh ~/log/%s %s/%s" % (log_name,s3logdir,log_name)
-    run_command(ip,inline=True,verbose=True,command=command)
+    run_command(ip,inline=True,verbose=True,command=command,private_key_file=private_key_file)
     time.sleep(10)
 
 def splitPartitions(partitions, n):
@@ -130,6 +130,7 @@ def splitPartitions(partitions, n):
 @click.option("--price",default="0.03")
 @click.option("--type",default="one-time")
 @click.option("--key_name",default="g0202243")
+@click.option("--private_key_file",default="/home/qning2/.ssh/g0202243.pem")
 @click.option("--instance_type",default="t2.large")
 @click.option("--security_group_ids",default="sg-47e5fa36")
 @click.option("--init_script_path",default="./init_script.sh") # must have no input args
@@ -142,7 +143,7 @@ def splitPartitions(partitions, n):
 @click.option("--s3logdir",default="logs")
 @click.option("--update_interval",default=60) # check every 60 seconds to close those instances that have finished
 @click.option("--debug",is_flag=True)
-def run(count,tag,image_id,price,type,key_name,instance_type,security_group_ids,init_script_path,main_script_path,main_script_args,input_s3_dir,output_s3_dir,input_suffix,output_suffix,s3logdir,update_interval,debug):
+def run(count,tag,image_id,price,type,key_name,private_key_file,instance_type,security_group_ids,init_script_path,main_script_path,main_script_args,input_s3_dir,output_s3_dir,input_suffix,output_suffix,s3logdir,update_interval,debug):
     # myMonitor = partition_monitor('results/illinois-temporal','results/illinois-temporal-postprocessing','ser.tgz',['temprel.tgz','stats'])
     myMonitor = partition_monitor(input_s3_dir, output_s3_dir, input_suffix,
                                   output_suffix.split())
@@ -163,7 +164,7 @@ def run(count,tag,image_id,price,type,key_name,instance_type,security_group_ids,
     tmp = 180
     print "Wait for %.2f mins to get all spot instances ready" % (1.0 * tmp / 60)
     time.sleep(tmp)
-    run_command_all_instances(tag=tag, inline=False, target=init_script_path)
+    run_command_all_instances(tag=tag, inline=False, target=init_script_path,private_key_file=private_key_file)
     print
     time.sleep(30)
     sys.stdout.flush()
@@ -181,7 +182,7 @@ def run(count,tag,image_id,price,type,key_name,instance_type,security_group_ids,
         command_modified = command + "\"%s\" " % partitions[i]
         command_modified += "%s " % main_script_args
         command_modified += ">> ~/log/ip-%s.log &" % host.replace('.', '-') # log of the main_script
-        run_command(host, command_modified, inline=True, verbose=False)
+        run_command(host, command_modified, inline=True, verbose=False, private_key_file=private_key_file)
 
     for key, value in par2host.iteritems():
         print key + "==>" + value
@@ -197,7 +198,7 @@ def run(count,tag,image_id,price,type,key_name,instance_type,security_group_ids,
                 print "Copy cmd log to s3"
                 partitions.remove(p_str)
                 host = par2host[p_str]
-                cplog2s3(host,s3logdir)
+                cplog2s3(host,s3logdir,private_key_file=private_key_file)
                 print "Stop instance"
                 stopInstanceByIp(host, dryrun=False)
             else:

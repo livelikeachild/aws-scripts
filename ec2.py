@@ -46,7 +46,7 @@ def run_command(host, command, user="ubuntu", private_key_file = "/home/qning2/.
     else:
         client.exec_command(command)
 
-def run_command_all_instances(tag,inline=True,target='',dryrun=False):
+def run_command_all_instances(tag,inline=True,target='',dryrun=False,private_key_file="/home/qning2/.ssh/g0202243.pem"):
     if inline==True:
         command = target
     else:
@@ -60,4 +60,4 @@ def run_command_all_instances(tag,inline=True,target='',dryrun=False):
         if dryrun:
             continue
         else:
-            run_command(host,command,inline=True,verbose=False)
+            run_command(host,command,inline=True,verbose=False, private_key_file=private_key_file)
