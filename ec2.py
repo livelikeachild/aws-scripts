@@ -31,7 +31,7 @@ def run_command(host, command, user="ubuntu", private_key_file = "/home/qning2/.
         with open(command) as f:
             command = f.read()
     client = SSHClient()
-    client.load_system_host_keys()
+    # client.load_system_host_keys()
     client.set_missing_host_key_policy(paramiko.WarningPolicy)
     client.connect(host, username=user, pkey=paramiko.RSAKey.from_private_key_file(private_key_file))
     if inline:
