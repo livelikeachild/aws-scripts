@@ -11,7 +11,7 @@ from spot_instance import *
 import sys
 
 class partition_monitor:
-    def __init__(self,par_input_s3_dir,par_output_s3_dir,par_input_suffix,par_output_suffix,verbose=True):
+    def __init__(self,par_input_s3_dir,par_output_s3_dir,par_input_suffix,par_output_suffix,verbose=True,debug=False):
         # dir should end with "/"
         # suffix doesn't come with a leading "."
         self.par_input_s3_dir = par_input_s3_dir
@@ -30,7 +30,9 @@ class partition_monitor:
 
         self.par_finished = set()
         self.par_unfinished = set()
-        for p in self.par_all[:20]:
+        if debug:
+            self.par_all = self.par_all[:5]
+        for p in self.par_all:
             if verbose:
                 print "Checking partition %d" % p
             if self.isPartitionFinished(p):
@@ -129,6 +131,7 @@ def splitPartitions(partitions, n):
 @click.option("--image_id",default="ami-0322f63e84fa693f6")
 @click.option("--price",default="0.03")
 @click.option("--type",default="one-time")
+@click.option("--region",default="us-east-1")
 @click.option("--key_name",default="g0202243")
 @click.option("--private_key_file",default="/home/qning2/.ssh/g0202243.pem")
 @click.option("--instance_type",default="t2.large")
@@ -143,10 +146,10 @@ def splitPartitions(partitions, n):
 @click.option("--s3logdir",default="logs")
 @click.option("--update_interval",default=60) # check every 60 seconds to close those instances that have finished
 @click.option("--debug",is_flag=True)
-def run(count,tag,image_id,price,type,key_name,private_key_file,instance_type,security_group_ids,init_script_path,main_script_path,main_script_args,input_s3_dir,output_s3_dir,input_suffix,output_suffix,s3logdir,update_interval,debug):
+def run(count,tag,image_id,price,type,region,key_name,private_key_file,instance_type,security_group_ids,init_script_path,main_script_path,main_script_args,input_s3_dir,output_s3_dir,input_suffix,output_suffix,s3logdir,update_interval,debug):
     # myMonitor = partition_monitor('results/illinois-temporal','results/illinois-temporal-postprocessing','ser.tgz',['temprel.tgz','stats'])
     myMonitor = partition_monitor(input_s3_dir, output_s3_dir, input_suffix,
-                                  output_suffix.split())
+                                  output_suffix.split(),debug=debug)
 
     print "#Instances requested: %d" % count
     partitions = myMonitor.par_unfinished
@@ -158,15 +161,19 @@ def run(count,tag,image_id,price,type,key_name,private_key_file,instance_type,se
 
     print "---------------------------"
     print "Tag: %s\nInput arguments: %s" % (tag, main_script_args)
-    if debug:
-        return
-    new_reservation = request_spot_instances(count=count, tag=tag,IMAGE_ID=image_id,price=price,type=type,key_name=key_name,instance_type=instance_type,security_group_ids=security_group_ids)
-    tmp = 180
+    new_reservation = request_spot_instances(count=count, tag=tag,IMAGE_ID=image_id,price=price,type=type,key_name=key_name,instance_type=instance_type,security_group_ids=security_group_ids,region=region)
+    tmp = 300
     print "Wait for %.2f mins to get all spot instances ready" % (1.0 * tmp / 60)
     time.sleep(tmp)
-    run_command_all_instances(tag=tag, inline=False, target=init_script_path,private_key_file=private_key_file)
+    while True:
+        try:
+            run_command_all_instances(tag=tag, inline=False, target=init_script_path,private_key_file=private_key_file)
+            break
+        except:
+            print "Error occurred:", sys.exc_info()[0]
+            time.sleep(30)
     print
-    time.sleep(30)
+    time.sleep(120)
     sys.stdout.flush()
 
     ips = get_all_instances(tag)
@@ -181,38 +188,41 @@ def run(count,tag,image_id,price,type,key_name,private_key_file,instance_type,se
         # partitions[i], forceUpdate, MAX_NUM_EVENT, host.replace('.', '-'))
         command_modified = command + "\"%s\" " % partitions[i]
         command_modified += "%s " % main_script_args
-        command_modified += ">> ~/log/ip-%s.log &" % host.replace('.', '-') # log of the main_script
+        command_modified += ">> ~/log/ip-%s.log" % host.replace('.', '-') # log of the main_script
         run_command(host, command_modified, inline=True, verbose=False, private_key_file=private_key_file)
 
     for key, value in par2host.iteritems():
         print key + "==>" + value
     sys.stdout.flush()
 
-    partitions_remaining = partitions
-    while 1:
-        for p_str in partitions_remaining:
-            p = p_str.split()
-            p = [int(x) for x in p]
-            if myMonitor.arePartitionsFinished(p):
-                print "%s finished" % p_str
-                print "Copy cmd log to s3"
-                partitions.remove(p_str)
-                host = par2host[p_str]
-                cplog2s3(host,s3logdir,private_key_file=private_key_file)
-                print "Stop instance"
-                stopInstanceByIp(host, dryrun=False)
-            else:
-                tmp = update_interval
-                print "Wait for %.2f min" % (1.0 * tmp / 60)
-                time.sleep(tmp)
-                # time.sleep(5)
-        if len(partitions) == 0:
-            break
+    if not debug:
         partitions_remaining = partitions
-        print "Remaining instances: %d" % len(partitions_remaining)
-        print "------------------------"
-        for p_str in partitions_remaining:
-            print par2host[p_str]
+        while 1:
+            for p_str in partitions_remaining:
+                p = p_str.split()
+                p = [int(x) for x in p]
+                if myMonitor.arePartitionsFinished(p):
+                    print "%s finished" % p_str
+                    print "Copy cmd log to s3"
+                    partitions.remove(p_str)
+                    host = par2host[p_str]
+                    cplog2s3(host,s3logdir,private_key_file=private_key_file)
+                    print "Stop instance"
+                    stopInstanceByIp(host, dryrun=False)
+                else:
+                    tmp = update_interval
+                    print "Wait for %.2f min" % (1.0 * tmp / 60)
+                    time.sleep(tmp)
+                    # time.sleep(5)
+            if len(partitions) == 0:
+                break
+            partitions_remaining = partitions
+            print "Remaining instances: %d" % len(partitions_remaining)
+            print "------------------------"
+            for p_str in partitions_remaining:
+                print par2host[p_str]
+    else:
+        print("In debug mode, instances are not terminated. Please make sure to terminate them manually.")
 
 if __name__ == "__main__":
     run()
