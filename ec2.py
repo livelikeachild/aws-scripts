@@ -3,8 +3,8 @@ from paramiko import SSHClient
 import paramiko
 from termcolor import colored
 
-def stopInstanceByIp(ip, dryrun=True):
-    conn=boto.ec2.connect_to_region('us-east-1')
+def stopInstanceByIp(ip, region, dryrun=True):
+    conn=boto.ec2.connect_to_region(region)
     reservations=conn.get_all_instances()
     instances=[i for r in reservations for i in r.instances]
     for ins in instances:
@@ -14,7 +14,7 @@ def stopInstanceByIp(ip, dryrun=True):
                 continue
             boto.connect_ec2().terminate_instances(ins.id)
 
-def get_all_instances(tag,region="us-east-1"):
+def get_all_instances(tag,region):
     conn=boto.ec2.connect_to_region(region)
     reservations=conn.get_all_instances(filters={"tag:Name":tag})
     instances=[i for r in reservations for i in r.instances]
@@ -46,13 +46,13 @@ def run_command(host, command, user="ubuntu", private_key_file = "/home/qning2/.
     else:
         client.exec_command(command)
 
-def run_command_all_instances(tag,inline=True,target='',dryrun=False,private_key_file="/home/qning2/.ssh/g0202243.pem"):
+def run_command_all_instances(tag,region,inline=True,target='',dryrun=False,private_key_file="/home/qning2/.ssh/g0202243.pem"):
     if inline==True:
         command = target
     else:
         with open(target) as input_fd:
             command = input_fd.read()
-    ips=get_all_instances(tag,region="us-east-1")
+    ips=get_all_instances(tag,region=region)
     ips.sort()
     for i,host in enumerate(ips):
         print "--------------------"

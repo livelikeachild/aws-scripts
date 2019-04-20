@@ -20,6 +20,7 @@ class partition_monitor:
             self.par_input_s3_dir += "/"
         if not self.par_output_s3_dir.endswith("/"):
             self.par_output_s3_dir += "/"
+        self.par_output_s3_checker = Check_Exist_S3('cogcomp-public-data',self.par_output_s3_dir)
 
         self.par_input_suffix = par_input_suffix # single suffix
         self.par_output_suffix = par_output_suffix # mulitple suffixes as a list
@@ -48,7 +49,7 @@ class partition_monitor:
         if par in self.par_finished:
             return True
         for suffix in self.par_output_suffix:
-            if not fileExistsS3("%s%d.%s" %(self.par_output_s3_dir,par,suffix)):
+            if not self.par_output_s3_checker.fileExistsS3("%d.%s" %(par,suffix)):
                 return False
         self.par_finished.add(par)
         if par in self.par_unfinished:
@@ -132,6 +133,7 @@ def splitPartitions(partitions, n):
 @click.option("--price",default="0.03")
 @click.option("--type",default="one-time")
 @click.option("--region",default="us-east-1")
+@click.option("--thread",default=1)
 @click.option("--key_name",default="g0202243")
 @click.option("--private_key_file",default="/home/qning2/.ssh/g0202243.pem")
 @click.option("--instance_type",default="t2.large")
@@ -146,7 +148,7 @@ def splitPartitions(partitions, n):
 @click.option("--s3logdir",default="logs")
 @click.option("--update_interval",default=60) # check every 60 seconds to close those instances that have finished
 @click.option("--debug",is_flag=True)
-def run(count,tag,image_id,price,type,region,key_name,private_key_file,instance_type,security_group_ids,init_script_path,main_script_path,main_script_args,input_s3_dir,output_s3_dir,input_suffix,output_suffix,s3logdir,update_interval,debug):
+def run(count,tag,image_id,price,type,region,thread,key_name,private_key_file,instance_type,security_group_ids,init_script_path,main_script_path,main_script_args,input_s3_dir,output_s3_dir,input_suffix,output_suffix,s3logdir,update_interval,debug):
     # myMonitor = partition_monitor('results/illinois-temporal','results/illinois-temporal-postprocessing','ser.tgz',['temprel.tgz','stats'])
     myMonitor = partition_monitor(input_s3_dir, output_s3_dir, input_suffix,
                                   output_suffix.split(),debug=debug)
@@ -156,18 +158,18 @@ def run(count,tag,image_id,price,type,region,key_name,private_key_file,instance_
     print "#Partitions unfinished: %d" % len(partitions)
     partitions = [x for x in partitions]
     print "#Partitions to process: %d" % len(partitions)
-    partitions = splitPartitions(partitions, count)
-    print "#Partitions equally assigned to %d instances" % count
+    partitions = splitPartitions(partitions, count*thread)
+    print "#Partitions equally assigned to %d instances and %d threads" % (count,thread)
 
     print "---------------------------"
     print "Tag: %s\nInput arguments: %s" % (tag, main_script_args)
     new_reservation = request_spot_instances(count=count, tag=tag,IMAGE_ID=image_id,price=price,type=type,key_name=key_name,instance_type=instance_type,security_group_ids=security_group_ids,region=region)
-    tmp = 300
+    tmp = 120
     print "Wait for %.2f mins to get all spot instances ready" % (1.0 * tmp / 60)
     time.sleep(tmp)
     while True:
         try:
-            run_command_all_instances(tag=tag, inline=False, target=init_script_path,private_key_file=private_key_file)
+            run_command_all_instances(tag=tag,region=region, inline=False, target=init_script_path,private_key_file=private_key_file)
             break
         except:
             print "Error occurred:", sys.exc_info()[0]
@@ -176,20 +178,29 @@ def run(count,tag,image_id,price,type,region,key_name,private_key_file,instance_
     time.sleep(120)
     sys.stdout.flush()
 
-    ips = get_all_instances(tag)
+    ips = get_all_instances(tag,region=region)
     ips.sort()
     command = main_script_path+" "
     par2host = {}
     for i, host in enumerate(ips):
         print "--------------------"
         print "%d - Executing scripts on %s" % (i, host)
-        par2host[partitions[i]] = host
+        tmp = ""
+        for j in range(thread):
+            print "Thread: %d" % j
+            tmp += " "+partitions[(i-1)*thread+j]
+            command_modified = command + "\"%s\" " % partitions[(i-1)*thread+j]
+            command_modified += "%s " % main_script_args
+            command_modified += ">> ~/log/ip-%s-%d.log" % (host.replace('.', '-'),j)  # log of the main_script
+            run_command(host, command_modified, inline=True, verbose=False, private_key_file=private_key_file)
+
+        par2host[tmp] = host
         # command_modified = command + "\"%s\" %s %s >> ~/log/illinois-temporal/ip-%s.log &" % (
         # partitions[i], forceUpdate, MAX_NUM_EVENT, host.replace('.', '-'))
-        command_modified = command + "\"%s\" " % partitions[i]
-        command_modified += "%s " % main_script_args
-        command_modified += ">> ~/log/ip-%s.log" % host.replace('.', '-') # log of the main_script
-        run_command(host, command_modified, inline=True, verbose=False, private_key_file=private_key_file)
+        # command_modified = command + "\"%s\" " % partitions[i]
+        # command_modified += "%s " % main_script_args
+        # command_modified += ">> ~/log/ip-%s.log" % host.replace('.', '-') # log of the main_script
+        # run_command(host, command_modified, inline=True, verbose=False, private_key_file=private_key_file)
 
     for key, value in par2host.iteritems():
         print key + "==>" + value
@@ -198,6 +209,7 @@ def run(count,tag,image_id,price,type,region,key_name,private_key_file,instance_
     if not debug:
         partitions_remaining = partitions
         while 1:
+            myMonitor.par_output_s3_checker.update()
             for p_str in partitions_remaining:
                 p = p_str.split()
                 p = [int(x) for x in p]
@@ -208,7 +220,7 @@ def run(count,tag,image_id,price,type,region,key_name,private_key_file,instance_
                     host = par2host[p_str]
                     cplog2s3(host,s3logdir,private_key_file=private_key_file)
                     print "Stop instance"
-                    stopInstanceByIp(host, dryrun=False)
+                    stopInstanceByIp(host, dryrun=False, region=region)
                 else:
                     tmp = update_interval
                     print "Wait for %.2f min" % (1.0 * tmp / 60)
